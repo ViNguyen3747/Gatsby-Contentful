@@ -17,7 +17,10 @@ const Posts = ({ data }) => {
   const repos = data.allContentfulGithubRepo.edges;
   return (
     <>
-      <Seo title="Vi's Projects list" />
+      <Seo
+        title="Vi's Projects list"
+        description="All self-projects built with ReactJS, GatsbyJS, Angular"
+      />
       <Header link="/" title="Back" />
       <HorizontalScroll>
         <PostContainer id="posts">
