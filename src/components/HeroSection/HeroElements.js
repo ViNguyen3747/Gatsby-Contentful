@@ -1,7 +1,18 @@
 import styled, { keyframes } from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 import * as palette from "../../styles/Variables";
-
+const trackingInExpand = keyframes`
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 export const HeroContainer = styled.div`
   background: ${palette.DARK};
   display: flex;
@@ -60,13 +71,29 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
   color: ${palette.LIGHT};
-  font-size: 48px;
+  font-size: 70px;
   text-align: center;
+  letter-spacing: 3px;
+  -webkit-animation: ${trackingInExpand} 3s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: ${trackingInExpand} 3s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   @media screen and (max-width: ${palette.BP_MEDIUM}) {
     font-size: 40px;
   }
   @media screen and (max-width: ${palette.BP_SMALL}) {
-    font-size: 32px;
+    font-size: 25px;
+  }
+`;
+
+export const HeroH2 = styled.h2`
+  color: ${palette.LIGHT};
+  font-size: 30px;
+  text-align: center;
+  @media screen and (max-width: ${palette.BP_MEDIUM}) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: ${palette.BP_SMALL}) {
+    font-size: 15px;
   }
 `;
 
@@ -75,12 +102,12 @@ export const HeroP = styled.p`
   color: ${palette.LIGHT};
   font-size: 24px;
   text-align: center;
-  max-width: 600px;
+  max-width: 700px;
   @media screen and (max-width: ${palette.BP_MEDIUM}) {
-    font-size: 24px;
+    font-size: 20px;
   }
   @media screen and (max-width: ${palette.BP_SMALL}) {
-    font-size: 18px;
+    font-size: 15px;
   }
 `;
 
@@ -92,11 +119,13 @@ export const HeroBtnWrapper = styled.div`
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
-  margin-left: 8px;
-  font-size: 20px;
+  margin-left: -10px;
+  font-size: 40px;
+  margin-bottom: -14px;
 `;
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
-  margin-left: 8px;
-  font-size: 20px;
+  margin-left: -10px;
+  font-size: 40px;
+  margin-bottom: -14px;
 `;

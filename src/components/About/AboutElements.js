@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import * as palette from "../../styles/Variables";
 
@@ -12,65 +11,63 @@ export const PostContainer = styled.section`
 export const PostsWrapper = styled.div`
   position: relative;
   height: 100%;
-  padding: 0 0 0 100px;
+  padding: 70px 0 0 100px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
 `;
 
-export const PostsCard = styled(Link)`
-  text-decoration: none;
-  margin-top: 70px;
+export const PostsCard = styled.div`
   position: relative;
   background: ${palette.LIGHT};
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   margin-right: 80px;
-  flex-shrink: 0;
   align-items: center;
-  border-radius: 10px;
-  color: ${palette.GREEN};
   text-align: center;
-  padding: 20px;
+  font-weight: bolder;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
   width: 350px;
   height: 500px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.02);
-    transition: all 0.2 ease-in-out;
-    cursor: pointer;
-  }
+  padding: 30px;
 `;
 
 export const PostsIcon = styled(GatsbyImage)`
   height: auto;
-  width: 100%;
+  width: 250px;
 `;
-
+export const TitleWrapper = styled.div`
+  height: fit-content;
+  width: 100%;
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 10px 0 20px 0;
+    background-color: ${palette.DARK_GREEN};
+  }
+`;
 export const PostsH1 = styled.h1`
   font-size: 1.5rem;
+  line-height: 2rem;
+  color: ${palette.DARK_GREEN};
   @media screen and (max-width: ${palette.BP_SMALL}) {
-    font-size: 2rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
   }
 `;
 
-export const PostsP = styled.div`
-  height: max-content;
-`;
-
-export const Tag = styled.span`
-  background: ${palette.LIGHT_GREEN};
-  color: ${palette.LIGHT};
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 0.6rem;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 0 10px 10px 0;
-  font-weight: bolder;
-  display: inline-block;
+export const PostsP = styled.p`
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: ${palette.DARK};
 `;

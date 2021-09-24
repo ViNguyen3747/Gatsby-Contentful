@@ -1,19 +1,40 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import * as palette from "../styles/Variables";
+import BackgroundImg from "../../static/images/background.webp";
+
 const TallOuterContainer = styled.div.attrs(({ dynamicHeight }) => ({
   style: { height: `${dynamicHeight}px` },
 }))`
   position: relative;
-  background: ${palette.DARK};
+  background: ${palette.DARK_GREEN};
+  background-image: url(${BackgroundImg});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
   width: 100%;
-  margin-top: -80px;
+  padding-top: -80px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent);
+  }
 `;
 
 const StickyInnerContainer = styled.div`
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 860px;
   width: 100%;
   overflow-x: hidden;
 `;
@@ -45,7 +66,7 @@ const applyScrollListener = (ref, setTranslateX) => {
   });
 };
 
-export default ({ children }) => {
+export default ({ bg, children }) => {
   const [dynamicHeight, setDynamicHeight] = useState(null);
   const [translateX, setTranslateX] = useState(0);
 
@@ -70,7 +91,7 @@ export default ({ children }) => {
   }, [containerRef, objectRef]);
 
   return (
-    <TallOuterContainer dynamicHeight={dynamicHeight}>
+    <TallOuterContainer dynamicHeight={dynamicHeight} bg={bg}>
       <StickyInnerContainer ref={containerRef}>
         <HorizontalTranslateContainer translateX={translateX} ref={objectRef}>
           {children}

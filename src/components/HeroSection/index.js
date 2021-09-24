@@ -1,17 +1,18 @@
 import React, { useState } from "react";
-import Video from "../../videos/video.mp4";
+import Video from "../../../static/videos/video.mp4";
 import {
   HeroContainer,
   HeroBg,
   VideoBg,
   HeroContent,
   HeroH1,
+  HeroH2,
   HeroP,
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
 } from "./HeroElements";
-import { Button } from "../ButtonElement";
+import { LinkScroll } from "../LinkElements";
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
   const onHover = () => {
@@ -23,12 +24,14 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="videomp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Welcome To My Creative World</HeroH1>
+        <HeroH2>Welcome To </HeroH2>
+        <HeroH1>My Creative World</HeroH1>
         <HeroP>
-          Please sign in for a new account today and comment on my post
+          This website is one of my self-project to showcase my website
+          development skills
         </HeroP>
         <HeroBtnWrapper>
-          <Button
+          <LinkScroll
             to="about"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
@@ -40,7 +43,7 @@ const HeroSection = () => {
             offset={-80}
           >
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          </LinkScroll>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

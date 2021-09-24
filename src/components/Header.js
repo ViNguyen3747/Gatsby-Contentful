@@ -36,13 +36,17 @@ export const NavLogo = styled(Link)`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+  transition: all 0.4s ease-out;
+  &:hover {
+    color: ${palette.LIGHT_GREEN};
+  }
 `;
 
-const Header = () => {
+const Header = ({ title, link }) => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">Tina</NavLogo>
+        <NavLogo to={`${link}`}>{title}</NavLogo>
       </NavbarContainer>
     </Nav>
   );

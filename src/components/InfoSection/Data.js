@@ -1,77 +1,36 @@
 import * as palette from "../../styles/Variables";
-
 export const HomeObjOne = {
   id: "about",
   bg: palette.DARK,
   lightText: true,
-  lightTextDesc: true,
   topLine: "About Me",
-  headline: "Ornare arcu odio ut sem",
+  headline: "Thi Kieu Vi Nguyen",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi proin sed libero enim. Feugiat sed lectus vestibulum mattis. Pellentesque sit amet porttitor eget dolor morbi. Egestas purus viverra accumsan in nisl nisi scelerisque.",
-  buttonLabel: "Get Started",
+    "I go by Vi (pronounced as V) for short. I am a Computer Science student from Angelo State University. I love building and designing web applications. Scroll down to learn more about me.",
+  buttonScroll: "Learn More",
   imgStart: false,
-  img: require("../../images/avatar.svg").default,
   alt: "introduction",
   dark: false,
-  primary: true,
+  primary: false,
   darkText: false,
-  to: "projects",
+  to: "aboutInfo",
 };
 
 export const HomeObjTwo = {
   id: "projects",
-  bg: palette.LIGHT,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: "Discover",
-  headline: "Ornare arcu odio ut sem",
+  bg: palette.DARK_GREEN,
+  lightText: true,
+  topLine: "Self Projects",
+  headline: "I love creating web applications from scratch",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi proin sed libero enim. Feugiat sed lectus vestibulum mattis. Pellentesque sit amet porttitor eget dolor morbi. Egestas purus viverra accumsan in nisl nisi scelerisque.",
-  buttonLabel: "Learn More",
+    "Want to see all my self projects? I love clean design, not-boring design",
+  buttonRoute: "Discover",
+  buttonScroll: "Github Repos",
   imgStart: true,
-  img: require("../../images/myCharacter.svg").default,
   alt: "discover",
-  dark: true,
-  primary: false,
-  darkText: true,
-  to: "posts",
-};
-
-export const HomeObjThree = {
-  id: "services",
-  bg: palette.LIGHT,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: "Github Repository",
-  headline: "Ornare arcu odio ut sem",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi proin sed libero enim. Feugiat sed lectus vestibulum mattis. Pellentesque sit amet porttitor eget dolor morbi. Egestas purus viverra accumsan in nisl nisi scelerisque.",
-  buttonLabel: "Discover",
-  imgStart: true,
-  img: require("../../images/signin.svg").default,
-  alt: "repos",
-  dark: true,
-  primary: false,
-  darkText: true,
-  to: "github",
-};
-
-export const HomeObjFour = {
-  id: "bakery",
-  bg: palette.LIGHT_GREEN,
-  lightText: false,
-  lightTextDesc: true,
-  topLine: "Hobby",
-  headline: "Ornare arcu odio ut sem",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi proin sed libero enim. Feugiat sed lectus vestibulum mattis. Pellentesque sit amet porttitor eget dolor morbi. Egestas purus viverra accumsan in nisl nisi scelerisque.",
-  buttonLabel: "Learn More",
-  imgStart: false,
-  img: require("../../images/food.svg").default,
-  alt: "discover",
-  dark: true,
+  dark: false,
   primary: false,
   darkText: false,
-  route: "/hobby",
+  route: "projects",
+  to: "github",
 };

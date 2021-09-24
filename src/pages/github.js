@@ -1,7 +1,13 @@
 import React from "react";
-import Repos from "../components/Repos/Repos";
+import Repos from "../components/GithubRepos/AllGithubRepos/Repos";
+import Seo from "../components/seo";
 const github = () => {
-  return <Repos />;
+  return (
+    <>
+      <Seo title="Vi's Github Repositories" />
+      <Repos />
+    </>
+  );
 };
 
 export default github;

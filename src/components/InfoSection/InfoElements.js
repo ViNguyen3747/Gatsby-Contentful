@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { GatsbyImage } from "gatsby-plugin-image";
 import * as palette from "../../styles/Variables";
 
 export const InfoContainer = styled.div`
@@ -79,23 +80,23 @@ export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   color: ${({ darkText }) => (darkText ? palette.DARK : palette.LIGHT)};
 `;
 
 export const BtnWrap = styled.div`
-  display: flex;
-  justify-content: flex-start;
+  margin: 10px;
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
+  width: 500px;
   height: 100%;
 `;
 
-export const Img = styled.img`
+export const Img = styled(GatsbyImage)`
   width: 100%;
-  max-height: 450px;
+  height: auto;
+  max-height: 500px;
   margin: 0 0 10px 0;
   padding-right: 0;
 `;

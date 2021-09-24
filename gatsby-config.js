@@ -5,8 +5,13 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Gatsby-Contentful",
+    url: "https://www.yourdomain.tld",
+    title: "Contentful with Gatsby",
+    author: "@ThiKieuViNguye1",
+    image: "/images/avatar.svg",
+    description: "Building portfolio powered by Contentful and GatsbyJs",
+    keywords:
+      "portfolio, GatsbyJS, Contentful, Styled Component, Responsive Design",
   },
   plugins: [
     {
@@ -26,15 +31,22 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: `${__dirname}/static/images`,
       },
-      __key: "images",
     },
     {
       resolve: `gatsby-source-github-api`,
       options: {
         token: process.env.GATSBY_GITHUB_API_TOKEN,
         graphQLQuery: data.githubApiQuery,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Encode Sans Expanded"],
+        },
       },
     },
     {

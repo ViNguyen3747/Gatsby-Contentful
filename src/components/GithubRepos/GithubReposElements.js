@@ -7,11 +7,13 @@ export const ReposContainer = styled.div`
   @media screen and (max-width: ${palette.BP_MEDIUM}) {
     padding: 100px 0;
   }
+  @media screen and (max-width: ${palette.BP_SMALL}) {
+    padding-bottom: 150px;
+  }
 `;
 
 export const ReposWrapper = styled.div`
   display: grid;
-  z-index: 1;
   height: 860px;
   width: 100%;
   max-width: 1100px;
@@ -43,8 +45,6 @@ export const Column1 = styled.div`
 `;
 
 export const Column2 = styled.div`
-  margin-bottom: 15px;
-  margin-left: 15px;
   padding: 0 15px;
   grid-area: col2;
   display: grid;
@@ -84,14 +84,6 @@ export const Heading = styled.h1`
   }
 `;
 
-export const Subtitle = styled.p`
-  max-width: 440px;
-  margin-bottom: 35px;
-  font-size: 18px;
-  line-height: 24px;
-  color: ${palette.DARK};
-`;
-
 export const RepoCard = styled.a`
   background-color: ${palette.DARK_GREEN};
   color: ${palette.LIGHT};
@@ -106,20 +98,6 @@ export const RepoCard = styled.a`
     background-color: ${palette.LIGHT};
     color: ${palette.DARK_GREEN};
   }
-`;
-export const GithubLink = styled.div`
-  font-size: 17px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  letter-spacing: 3px;
-  margin: 10px;
-`;
-
-export const BtnWrap = styled.div`
-  display: flex;
-  justify-content: flex-start;
 `;
 export const LanguageWrapper = styled.div`
   display: flex;
@@ -138,4 +116,18 @@ export const Circle = styled.span`
   margin-left: 10px;
   margin-right: 4px;
   margin-top: 2px;
+`;
+export const GithubName = styled.div`
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  letter-spacing: 3px;
+  margin: 10px;
+`;
+
+export const BtnWrap = styled.div`
+  display: flex;
+  justify-content: flex-start;
 `;

@@ -1,15 +1,15 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import { GithubContainer, GithubWrapper, ImgWrap, Img } from "./ReposElement";
 import {
   Circle,
-  GithubContainer,
-  GithubLink,
-  GithubWrapper,
-  LanguageWrapper,
+  GithubName,
   RepoCard,
-} from "./ReposElement";
-import HorizontalScroll from "../horizontal-scroll";
-import Header from "../Header";
+  LanguageWrapper,
+} from "../GithubReposElements";
+import Coding from "../../../../static/images/coding.svg";
+import HorizontalScroll from "../../horizontal-scroll";
+import Header from "../../Header";
 
 const Repos = () => {
   const data = useStaticQuery(graphql`
@@ -22,7 +22,6 @@ const Repos = () => {
                 repositories {
                   edges {
                     node {
-                      createdAt(formatString: "MMMM DD YYYY")
                       homepageUrl
                       languages {
                         nodes {
@@ -32,7 +31,6 @@ const Repos = () => {
                       }
                       name
                       url
-                      updatedAt(formatString: "MMMM DD YYYY")
                     }
                   }
                 }
@@ -44,25 +42,26 @@ const Repos = () => {
     }
   `);
   const repos = data.allGithubData.edges[0].node.data.viewer.repositories.edges;
-  console.log(repos);
   return (
     <>
-      <Header />
+      <Header link="/" title="Back" />
       <HorizontalScroll>
         <GithubContainer id="github">
-          <GithubWrapper columns={Math.round(repos.length / 2)}>
+          <GithubWrapper columns={Math.floor(repos.length / 2)}>
+            <ImgWrap>
+              <Img src={Coding} alt="Github Repositories" />
+            </ImgWrap>
             {repos.map((repo, index) => (
-              <RepoCard key={index}>
-                <GithubLink
-                  href={repo.node.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {repo.node.name}
-                </GithubLink>
+              <RepoCard
+                key={index}
+                href={repo.node.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GithubName>{repo.node.name}</GithubName>
                 <LanguageWrapper>
                   {repo.node.languages.nodes.map((l) => (
-                    <div>
+                    <div key={l.name}>
                       <Circle bg={l.color} />
                       {l.name}
                     </div>

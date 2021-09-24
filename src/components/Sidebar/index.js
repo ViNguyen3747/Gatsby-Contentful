@@ -18,7 +18,7 @@ const index = ({ isOpen, toggle }) => {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to="about" onClick={toggle}>
-            About
+            About Me
           </SidebarLink>
           <SidebarLink to="projects" onClick={toggle}>
             Projects

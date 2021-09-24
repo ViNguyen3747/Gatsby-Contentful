@@ -10,14 +10,13 @@ import {
   TextWrapper,
   TopLine,
   Heading,
-  Subtitle,
   RepoCard,
-  GithubLink,
+  GithubName,
   BtnWrap,
   LanguageWrapper,
   Circle,
 } from "./GithubReposElements";
-import { ButtonRouter } from "../ButtonElement";
+import { LinkRouter } from "../LinkElements";
 const GithubRepos = () => {
   const data = useStaticQuery(graphql`
     {
@@ -57,19 +56,14 @@ const GithubRepos = () => {
         <ReposRow>
           <Column1>
             <TextWrapper>
-              <TopLine>Github Repository</TopLine>
-              <Heading>Ornare arcu odio ut sem</Heading>
-              <Subtitle>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
-                proin sed libero enim. Feugiat sed lectus vestibulum mattis.
-                Pellentesque sit amet porttitor eget dolor morbi. Egestas purus
-                viverra accumsan in nisl nisi scelerisque.
-              </Subtitle>
+              <TopLine>Github Repos</TopLine>
+              <Heading>
+                This is where you can find all of my coding projects
+              </Heading>
               <BtnWrap>
-                <ButtonRouter to="/github" primary="true">
+                <LinkRouter to="/github" dark="true">
                   Learn More
-                </ButtonRouter>
+                </LinkRouter>
               </BtnWrap>
             </TextWrapper>
           </Column1>
@@ -81,7 +75,7 @@ const GithubRepos = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <GithubLink>{repo.node.name}</GithubLink>
+                <GithubName>{repo.node.name}</GithubName>
                 <LanguageWrapper>
                   {repo.node.languages.nodes.map((l) => (
                     <div key={l.name}>

@@ -13,7 +13,8 @@ import {
   Img,
   ImgWrap,
 } from "./InfoElements";
-import { Button, ButtonRouter } from "../ButtonElement";
+import { LinkScroll, LinkRouter } from "../LinkElements";
+
 const index = ({
   bg,
   id,
@@ -23,14 +24,15 @@ const index = ({
   headline,
   darkText,
   description,
-  buttonLabel,
+  buttonRoute,
+  buttonScroll,
   img,
   alt,
   primary,
   dark,
-  dark2,
   to,
   route,
+  info,
 }) => {
   return (
     <>
@@ -40,12 +42,23 @@ const index = ({
             <Column1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
+                <Heading lightText={lightText}>{info.headline}</Heading>
+                <Subtitle darkText={darkText}>{info.description}</Subtitle>
 
-                <BtnWrap>
-                  {to ? (
-                    <Button
+                {route ? (
+                  <BtnWrap>
+                    <LinkRouter
+                      to={route}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                    >
+                      {buttonRoute}
+                    </LinkRouter>
+                  </BtnWrap>
+                ) : null}
+                {to ? (
+                  <BtnWrap>
+                    <LinkScroll
                       to={to}
                       smooth={true}
                       duration={500}
@@ -53,27 +66,17 @@ const index = ({
                       exact="true"
                       offset={-80}
                       primary={primary ? 1 : 0}
-                      dark={dark ? 0 : 1}
-                      dark2={dark2 ? 1 : 0}
+                      dark={dark ? 1 : 0}
                     >
-                      {buttonLabel}
-                    </Button>
-                  ) : (
-                    <ButtonRouter
-                      to={route}
-                      primary={primary ? 1 : 0}
-                      dark={dark ? 0 : 1}
-                      dark2={dark2 ? 1 : 0}
-                    >
-                      {buttonLabel}
-                    </ButtonRouter>
-                  )}
-                </BtnWrap>
+                      {buttonScroll}
+                    </LinkScroll>
+                  </BtnWrap>
+                ) : null}
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={img} alt={alt} />
+                <Img image={info.img.gatsbyImageData} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>

@@ -1,5 +1,5 @@
 module.exports = {
-    githubApiQuery: `query{
+  githubApiQuery: `query{
         viewer {
           avatarUrl
           repositories(first: 20, orderBy: {field: CREATED_AT, direction: DESC}) {
@@ -21,5 +21,5 @@ module.exports = {
           }
         }
       }
-      `
-}
+      `,
+};
