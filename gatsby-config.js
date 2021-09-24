@@ -2,13 +2,12 @@ const data = require("./src/data/data");
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
-
 module.exports = {
   siteMetadata: {
     url: "https://www.yourdomain.tld",
     title: "Contentful with Gatsby",
     author: "@ThiKieuViNguye1",
-    image: "/images/avatar.svg",
+    image: "/avatar.png",
     description: "Building portfolio powered by Contentful and GatsbyJs",
     keywords:
       "portfolio, GatsbyJS, Contentful, Styled Component, Responsive Design",
