@@ -62,7 +62,7 @@ const GithubRepos = () => {
               </Heading>
               <BtnWrap>
                 <LinkRouter to="/github" dark="true">
-                  Learn More
+                  To Github Repos
                 </LinkRouter>
               </BtnWrap>
             </TextWrapper>

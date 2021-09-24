@@ -24,7 +24,7 @@ export const HomeObjTwo = {
   headline: "I love creating web applications from scratch",
   description:
     "Want to see all my self projects? I love clean design, not-boring design",
-  buttonRoute: "Discover",
+  buttonRoute: "To My Self-Projects",
   buttonScroll: "Github Repos",
   imgStart: true,
   alt: "discover",
