@@ -14,19 +14,15 @@ import {
   ImgWrap,
 } from "./InfoElements";
 import { LinkScroll, LinkRouter } from "../LinkElements";
-
 const index = ({
   bg,
   id,
   imgStart,
   topLine,
   lightText,
-  headline,
   darkText,
-  description,
   buttonRoute,
   buttonScroll,
-  img,
   alt,
   primary,
   dark,

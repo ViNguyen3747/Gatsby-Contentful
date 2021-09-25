@@ -1,8 +1,6 @@
 export const GREEN = "#177629";
 export const DARK_GREEN = "#17340B";
-export const XDARK_GREEN = "#091404";
 export const LIGHT_GREEN = "#57A836";
-export const CLEAR_GREEN = "#0a1f02d2";
 export const LIGHT = "#f9f9f9";
 export const DARK = "#010606";
 export const BP_SMALL = "400px";

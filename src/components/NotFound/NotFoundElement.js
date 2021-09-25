@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import { Link } from "gatsby";
 import * as palette from "../../styles/Variables";
 
 const Flicker = keyframes`
