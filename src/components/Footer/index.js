@@ -31,6 +31,7 @@ const index = () => {
               <SocialIconLink
                 href="https://www.facebook.com/profile.php?id=100010227366087"
                 target="_blank"
+                rel="noopener noreferrer"
                 aria-label="FaceBook"
               >
                 <FaFacebook />
@@ -38,6 +39,7 @@ const index = () => {
               <SocialIconLink
                 href="https://www.instagram.com/v_nguyen_711/"
                 target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
               >
                 <FaInstagram />
@@ -45,6 +47,7 @@ const index = () => {
               <SocialIconLink
                 href="https://twitter.com/ThiKieuViNguye1"
                 target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Twitter"
               >
                 <FaTwitter />
@@ -52,6 +55,7 @@ const index = () => {
               <SocialIconLink
                 href="https://www.linkedin.com/in/thi-kieu-vi-nguyen-0894a919a"
                 target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Linkedin"
               >
                 <FaLinkedin />

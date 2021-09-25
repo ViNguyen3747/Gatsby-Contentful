@@ -77,7 +77,6 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 30px;
@@ -85,11 +84,11 @@ export const Subtitle = styled.p`
 `;
 
 export const BtnWrap = styled.div`
-  margin: 10px;
+  margin: 10px 0px;
 `;
 
 export const ImgWrap = styled.div`
-  width: 500px;
+  max-width: 500px;
   height: 100%;
 `;
 
