@@ -5,7 +5,7 @@ import * as palette from "../../styles/Variables";
 export const PostContainer = styled.section`
   position: relative;
   width: fit-content;
-  height: 100vh;
+  height: auto;
 `;
 
 export const PostsWrapper = styled.div`

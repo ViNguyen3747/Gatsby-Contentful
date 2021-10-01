@@ -14,7 +14,7 @@ export const ReposContainer = styled.div`
 
 export const ReposWrapper = styled.div`
   display: grid;
-  height: 860px;
+  height: 100vh;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;

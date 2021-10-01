@@ -34,7 +34,7 @@ const TallOuterContainer = styled.div.attrs(({ dynamicHeight }) => ({
 const StickyInnerContainer = styled.div`
   position: sticky;
   top: 0;
-  height: 860px;
+  height: 100vh;
   width: 100%;
   overflow-x: hidden;
 `;
@@ -44,6 +44,7 @@ const HorizontalTranslateContainer = styled.div.attrs(({ translateX }) => ({
 }))`
   position: absolute;
   height: 100%;
+  padding-top: 8%;
   will-change: transform;
 `;
 
