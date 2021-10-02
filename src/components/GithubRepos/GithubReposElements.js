@@ -51,7 +51,7 @@ export const Column2 = styled.div`
   display: grid;
   grid-template-rows: repeat(4, 100px);
   grid-gap: 20px;
-  width: 100%;
+  width: 90%;
   @media screen and (min-width: ${palette.BP_MEDIUM}) {
     transform: rotateY(30deg);
   }

@@ -44,6 +44,10 @@ export const PostsCard = styled(Link)`
     transition: all 0.2 ease-in-out;
     cursor: pointer;
   }
+
+  @media screen and (min-width: ${palette.BP_XLARGE}) {
+    transform: scale(2);
+  }
 `;
 
 export const PostsIcon = styled(GatsbyImage)`

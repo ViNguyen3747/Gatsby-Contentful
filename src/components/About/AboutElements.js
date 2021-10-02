@@ -38,6 +38,9 @@ export const PostsCard = styled.div`
   width: 350px;
   height: 500px;
   padding: 30px;
+  @media screen and (min-width: ${palette.BP_XLARGE}) {
+    transform: scale(2);
+  }
 `;
 
 export const PostsIcon = styled(GatsbyImage)`
