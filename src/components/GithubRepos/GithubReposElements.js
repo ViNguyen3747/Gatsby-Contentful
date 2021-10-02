@@ -4,6 +4,7 @@ import * as palette from "../../styles/Variables";
 export const ReposContainer = styled.div`
   color: ${palette.DARK};
   background: ${palette.LIGHT};
+
   @media screen and (max-width: ${palette.BP_MEDIUM}) {
     padding: 100px 0;
   }
@@ -14,9 +15,9 @@ export const ReposContainer = styled.div`
 
 export const ReposWrapper = styled.div`
   display: grid;
-  height: 100vh;
   width: 100%;
-  max-width: 1100px;
+  min-height: 100vh;
+  max-width: 80vw;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -57,7 +58,7 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 540px;
+  max-width: 60vw;
   padding-top: 0;
   padding-bottom: 60px;
 `;

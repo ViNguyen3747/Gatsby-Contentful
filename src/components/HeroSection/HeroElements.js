@@ -61,7 +61,7 @@ export const VideoBg = styled.video`
 
 export const HeroContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
+  max-width: 100vw;
   position: absolute;
   padding: 8px 24px;
   display: flex;
@@ -102,7 +102,7 @@ export const HeroP = styled.p`
   color: ${palette.LIGHT};
   font-size: 24px;
   text-align: center;
-  max-width: 700px;
+  max-width: 60vw;
   @media screen and (max-width: ${palette.BP_MEDIUM}) {
     font-size: 20px;
   }
