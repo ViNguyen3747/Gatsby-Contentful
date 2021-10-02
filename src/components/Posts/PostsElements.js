@@ -46,7 +46,7 @@ export const PostsCard = styled(Link)`
   }
 
   @media screen and (min-width: ${palette.BP_XLARGE}) {
-    transform: scale(2);
+    transform: scale(1.5);
   }
 `;
 

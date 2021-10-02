@@ -39,7 +39,7 @@ export const PostsCard = styled.div`
   height: 500px;
   padding: 30px;
   @media screen and (min-width: ${palette.BP_XLARGE}) {
-    transform: scale(2);
+    transform: scale(1.5);
   }
 `;
 
