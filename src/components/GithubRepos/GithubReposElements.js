@@ -31,7 +31,7 @@ export const ReposRow = styled.div`
   grid-template-areas: "col2 col1";
 
   perspective: 1000px;
-  @media screen and (max-width: ${palette.BP_MEDIUM}) {
+  @media screen and (max-width: ${palette.BP_XLARGE}) {
     grid-template-areas: "col1 col1" "col2 col2";
   }
 `;
@@ -40,7 +40,7 @@ export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
-  @media screen and (min-width: ${palette.BP_MEDIUM}) {
+  @media screen and (min-width: ${palette.BP_XLARGE}) {
     transform: rotateY(-30deg);
   }
 `;
@@ -52,7 +52,7 @@ export const Column2 = styled.div`
   grid-template-rows: repeat(4, 100px);
   grid-gap: 20px;
   width: 90%;
-  @media screen and (min-width: ${palette.BP_MEDIUM}) {
+  @media screen and (min-width: ${palette.BP_XLARGE}) {
     transform: rotateY(30deg);
   }
 `;
