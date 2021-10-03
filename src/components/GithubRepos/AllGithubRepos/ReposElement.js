@@ -2,14 +2,13 @@ import styled from "styled-components";
 export const GithubContainer = styled.section`
   position: relative;
   width: fit-content;
-  height: 100vh;
 `;
 
 export const GithubWrapper = styled.div`
   position: relative;
   height: 100%;
   display: grid;
-  padding: 250px 100px 0 100px;
+  padding-top: 20vh;
   grid-template-columns: repeat(${(props) => props.columns}, 500px);
   grid-auto-rows: 90px;
   grid-gap: 30px;

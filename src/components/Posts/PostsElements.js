@@ -45,7 +45,7 @@ export const PostsCard = styled(Link)`
     cursor: pointer;
   }
 
-  @media screen and (min-width: ${palette.BP_XLARGE}) {
+  @media screen and (min-width: ${palette.BP_XXLARGE}) {
     width: 500px;
     height: 720px;
   }
@@ -60,6 +60,9 @@ export const PostsH1 = styled.h1`
   font-size: 1.5rem;
   @media screen and (max-width: ${palette.BP_SMALL}) {
     font-size: 2rem;
+  }
+  @media screen and (min-width: ${palette.BP_XXLARGE}) {
+    font-size: 2.5rem;
   }
 `;
 
@@ -78,4 +81,7 @@ export const Tag = styled.span`
   margin: 0 10px 10px 0;
   font-weight: bolder;
   display: inline-block;
+  @media screen and (min-width: ${palette.BP_XXLARGE}) {
+    font-size: 1.5rem;
+  }
 `;

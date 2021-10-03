@@ -5,13 +5,13 @@ import * as palette from "../../styles/Variables";
 export const PostContainer = styled.section`
   position: relative;
   width: fit-content;
-  height: auto;
+  min-height: 100vh;
 `;
 
 export const PostsWrapper = styled.div`
   position: relative;
+  padding: 10vh;
   height: 100%;
-  padding: 70px 0 0 100px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -38,7 +38,7 @@ export const PostsCard = styled.div`
   width: 350px;
   height: 500px;
   padding: 30px;
-  @media screen and (min-width: ${palette.BP_XLARGE}) {
+  @media screen and (min-width: ${palette.BP_XXLARGE}) {
     width: 500px;
     height: 720px;
   }
@@ -47,6 +47,9 @@ export const PostsCard = styled.div`
 export const PostsIcon = styled(GatsbyImage)`
   height: auto;
   width: 250px;
+  @media screen and (min-width: ${palette.BP_XXLARGE}) {
+    width: 360px;
+  }
 `;
 export const TitleWrapper = styled.div`
   height: fit-content;
@@ -68,10 +71,18 @@ export const PostsH1 = styled.h1`
     font-size: 1.3rem;
     line-height: 2rem;
   }
+  @media screen and (min-width: ${palette.BP_XXLARGE}) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
 `;
 
 export const PostsP = styled.p`
   font-size: 1rem;
   line-height: 1.5rem;
   color: ${palette.DARK};
+  @media screen and (min-width: ${palette.BP_XXLARGE}) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
 `;

@@ -11,13 +11,11 @@ export const FooterWrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 100vw;
-  width: 100%auto;
   margin: 0 auto;
 `;
 
 export const SocialMedia = styled.section`
-  max-width: 90vw;
+  max-width: 80vw;
   width: 100%;
 `;
 

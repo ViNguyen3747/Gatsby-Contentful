@@ -27,7 +27,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 100vw;
+  max-width: 80vw;
 `;
 
 export const NavLogo = styled.div`

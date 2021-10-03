@@ -13,7 +13,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   max-width: 100vw;
   margin-right: auto;

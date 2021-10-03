@@ -34,9 +34,10 @@ const TallOuterContainer = styled.div.attrs(({ dynamicHeight }) => ({
 const StickyInnerContainer = styled.div`
   position: sticky;
   top: 0;
-  height: 100vh;
   width: 100%;
+  height: 100vh;
   overflow-x: hidden;
+  overflow-y: hidden;
 `;
 
 const HorizontalTranslateContainer = styled.div.attrs(({ translateX }) => ({

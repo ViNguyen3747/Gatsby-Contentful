@@ -7,3 +7,4 @@ export const BP_SMALL = "400px";
 export const BP_MEDIUM = "770px";
 export const BP_LARGE = "820px";
 export const BP_XLARGE = "1000px";
+export const BP_XXLARGE = "2000px";
