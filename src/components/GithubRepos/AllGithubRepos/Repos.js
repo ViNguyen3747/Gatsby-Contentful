@@ -47,10 +47,10 @@ const Repos = () => {
       <Header link="/" title="Back" />
       <HorizontalScroll>
         <GithubContainer id="github">
-          <GithubWrapper columns={Math.floor(repos.length / 2)}>
-            <ImgWrap>
+          <GithubWrapper columns={Math.ceil(repos.length / 2)}>
+            {/* <ImgWrap>
               <Img src={Coding} alt="Github Repositories" />
-            </ImgWrap>
+            </ImgWrap> */}
             {repos.map((repo, index) => (
               <RepoCard
                 key={index}
