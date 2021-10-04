@@ -13,7 +13,7 @@ import {
   Img,
   ImgWrap,
 } from "./InfoElements";
-import { LinkScroll, LinkRouter } from "../LinkElements";
+import { LinkScroll, LinkRouter, LinkStandard } from "../LinkElements";
 const index = ({
   bg,
   id,
@@ -23,11 +23,13 @@ const index = ({
   darkText,
   buttonRoute,
   buttonScroll,
+  buttonLink,
   alt,
   primary,
   dark,
   to,
   route,
+  link,
   info,
 }) => {
   return (
@@ -40,7 +42,18 @@ const index = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{info.headline}</Heading>
                 <Subtitle darkText={darkText}>{info.description}</Subtitle>
-
+                {link ? (
+                  <BtnWrap>
+                    <LinkStandard
+                      href={link}
+                      target="_blank"
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                    >
+                      {buttonLink}
+                    </LinkStandard>
+                  </BtnWrap>
+                ) : null}
                 {route ? (
                   <BtnWrap>
                     <LinkRouter
@@ -60,7 +73,7 @@ const index = ({
                       duration={500}
                       spy={true}
                       exact="true"
-                      offset={-80}
+                      offset={-75}
                       primary={primary ? 1 : 0}
                       dark={dark ? 1 : 0}
                     >

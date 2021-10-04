@@ -5,9 +5,14 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
 import GithubRepos from "../components/GithubRepos/GithubRepos";
-import { HomeObjOne, HomeObjTwo } from "../components/InfoSection/Data";
+import {
+  AboutSection,
+  ProjectSection,
+  ContactSection,
+} from "../components/InfoSection/Data";
 import About from "../components/About";
 import Seo from "../components/seo";
+import { ContactUs } from "../components/Contact";
 const IndexPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const data = useStaticQuery(graphql`
@@ -33,16 +38,18 @@ const IndexPage = () => {
   const infos = data.allContentfulInfoSection.edges;
   const aboutMeInfo = infos[0].node;
   const projectInfo = infos[1].node;
+  const contactInfo = infos[2].node;
   return (
     <>
       <Seo title="Tina's Portfolio" />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      <InfoSection {...HomeObjOne} info={aboutMeInfo} />
+      <InfoSection {...AboutSection} info={aboutMeInfo} />
       <About />
-      <InfoSection {...HomeObjTwo} info={projectInfo} />
+      <InfoSection {...ProjectSection} info={projectInfo} />
       <GithubRepos />
+      <ContactUs {...ContactSection} info={contactInfo} />
     </>
   );
 };

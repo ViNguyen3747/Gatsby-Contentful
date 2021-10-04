@@ -2,8 +2,8 @@ import styled from "styled-components";
 import * as palette from "../../styles/Variables";
 
 export const ReposContainer = styled.div`
-  color: ${palette.DARK};
-  background: ${palette.LIGHT};
+  color: ${palette.LIGHT};
+  background: ${palette.DARK_GREEN};
 
   @media screen and (max-width: ${palette.BP_MEDIUM}) {
     padding: 100px 0;
@@ -38,10 +38,11 @@ export const ReposRow = styled.div`
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
-  padding: 0 15px;
+  padding-top: 50px;
   grid-area: col1;
   @media screen and (min-width: ${palette.BP_XLARGE}) {
     transform: rotateY(-30deg);
+    padding-top: 0;
   }
 `;
 
@@ -52,8 +53,10 @@ export const Column2 = styled.div`
   grid-template-rows: repeat(4, 100px);
   grid-gap: 20px;
   width: 90%;
+  padding-bottom: 50px;
   @media screen and (min-width: ${palette.BP_XLARGE}) {
     transform: rotateY(30deg);
+    padding-bottom: 0px;
   }
 `;
 
@@ -78,7 +81,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${palette.DARK_GREEN};
+  color: ${palette.LIGHT};
 
   @media screen and (max-width: ${palette.BP_SMALL}) {
     font-size: 32px;
@@ -86,7 +89,7 @@ export const Heading = styled.h1`
 `;
 
 export const RepoCard = styled.a`
-  background-color: ${palette.DARK_GREEN};
+  background-color: ${palette.LIGHT_GREEN};
   color: ${palette.LIGHT};
   display: box;
   border-radius: 5px;
@@ -129,6 +132,5 @@ export const GithubName = styled.div`
 `;
 
 export const BtnWrap = styled.div`
-  display: flex;
-  justify-content: flex-start;
+  margin: 10px 0px;
 `;

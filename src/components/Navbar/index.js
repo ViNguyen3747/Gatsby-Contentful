@@ -80,6 +80,18 @@ const Navbar = ({ toggle }) => {
                   Github Repos
                 </NavLinks>
               </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-75}
+                >
+                  Contact Me
+                </NavLinks>
+              </NavItem>
             </NavMenu>
           </NavbarContainer>
         </Nav>

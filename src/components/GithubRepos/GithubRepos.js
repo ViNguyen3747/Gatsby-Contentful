@@ -16,7 +16,7 @@ import {
   LanguageWrapper,
   Circle,
 } from "./GithubReposElements";
-import { LinkRouter } from "../LinkElements";
+import { LinkRouter, LinkScroll } from "../LinkElements";
 const GithubRepos = () => {
   const data = useStaticQuery(graphql`
     {
@@ -61,9 +61,19 @@ const GithubRepos = () => {
                 This is where you can find all of my coding projects
               </Heading>
               <BtnWrap>
-                <LinkRouter to="/github" dark="true">
-                  To Github Repos
-                </LinkRouter>
+                <LinkRouter to="/github">To Github Repos</LinkRouter>
+              </BtnWrap>
+              <BtnWrap>
+                <LinkScroll
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-75}
+                >
+                  Hire Me
+                </LinkScroll>
               </BtnWrap>
             </TextWrapper>
           </Column1>

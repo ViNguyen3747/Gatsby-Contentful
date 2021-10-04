@@ -1,30 +1,44 @@
 import * as palette from "../../styles/Variables";
-export const HomeObjOne = {
+export const AboutSection = {
   id: "about",
   bg: palette.DARK,
   lightText: true,
   topLine: "About Me",
   buttonScroll: "Learn More",
+  buttonLink: "My Resume",
   imgStart: false,
   alt: "introduction",
   dark: false,
   primary: false,
   darkText: false,
   to: "aboutInfo",
+  link: "/Vi_Resume.pdf",
 };
 
-export const HomeObjTwo = {
+export const ProjectSection = {
   id: "projects",
-  bg: palette.DARK_GREEN,
-  lightText: true,
+  bg: palette.LIGHT,
+  lightText: false,
   topLine: "Self Projects",
   buttonRoute: "To My Self-Projects",
   buttonScroll: "Github Repos",
-  imgStart: true,
+  imgStart: false,
   alt: "discover",
+  dark: true,
+  primary: false,
+  darkText: true,
+  route: "projects",
+  to: "github",
+};
+
+export const ContactSection = {
+  id: "contact",
+  bg: palette.LIGHT,
+  lightText: false,
+  topLine: "Contact Me",
+  imgStart: false,
+  alt: "email",
   dark: false,
   primary: false,
   darkText: false,
-  route: "projects",
-  to: "github",
 };
