@@ -1,7 +1,7 @@
 export const GREEN = "#177629";
 export const DARK_GREEN = "#17340B";
 export const LIGHT_GREEN = "#57A836";
-export const YELLOW_GREEN = "#c5d86d";
+export const YELLOW_GREEN = "#6a994e";
 export const LIGHT = "#f9f9f9";
 export const DARK = "#010606";
 export const BP_SMALL = "400px";
