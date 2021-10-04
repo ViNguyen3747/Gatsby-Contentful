@@ -89,7 +89,7 @@ export const Heading = styled.h1`
 `;
 
 export const RepoCard = styled.a`
-  background-color: ${palette.LIGHT_GREEN};
+  background-color: ${palette.GREEN};
   color: ${palette.LIGHT};
   display: box;
   border-radius: 5px;
