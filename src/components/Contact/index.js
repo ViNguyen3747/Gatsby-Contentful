@@ -28,10 +28,10 @@ export const ContactUs = ({ bg, id, imgStart, lightText, alt, info }) => {
 
     emailjs
       .sendForm(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
+        process.env.GATSBY_SERVICE_ID,
+        process.env.GATSBY_TEMPLATE_ID,
         form.current,
-        process.env.USER_ID
+        process.env.GATSBY_USER_ID
       )
       .then(
         (result) => {
