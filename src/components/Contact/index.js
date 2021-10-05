@@ -19,6 +19,9 @@ import {
   TextArea,
   Button,
 } from "./ContactElements";
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 export const ContactUs = ({ bg, id, imgStart, lightText, alt, info }) => {
   const form = useRef();
 
