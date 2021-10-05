@@ -124,7 +124,7 @@ export const LinkScroll = styled(LinkS)`
   width: 250px;
   height: 60px;
   position: relative;
-  border: 4px solid ${palette.LIGHT};
+  border: 3.5px solid ${palette.LIGHT};
   color: ${palette.LIGHT};
   background-color: transparent;
   text-align: center;

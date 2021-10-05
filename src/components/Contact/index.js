@@ -27,10 +27,10 @@ export const ContactUs = ({ bg, id, imgStart, lightText, alt, info }) => {
 
     emailjs
       .sendForm(
-        "service_zoffr6h",
-        "template_7g7589h",
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
         form.current,
-        "user_l3lIjXVJR3NioutgQwFdc"
+        process.env.USER_ID
       )
       .then(
         (result) => {
