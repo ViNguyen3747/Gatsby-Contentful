@@ -13,10 +13,3 @@ export const GithubWrapper = styled.div`
   grid-auto-rows: 90px;
   grid-gap: 30px;
 `;
-export const ImgWrap = styled.div`
-  grid-row: 1 / span 3;
-`;
-
-export const Img = styled.img`
-  width: 100%;
-`;

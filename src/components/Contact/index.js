@@ -64,7 +64,7 @@ export const ContactUs = ({ bg, id, imgStart, lightText, alt, info }) => {
                     <TextArea name="message" required />
                   </InputWrapper>
                   <InputWrapper>
-                    <Button type="submit" value="Send" />
+                    <Button type="submit">Send</Button>
                   </InputWrapper>
                 </ContactContainer>
               </TextWrapper>

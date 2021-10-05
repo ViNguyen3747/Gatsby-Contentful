@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
+import { Link as LinkS } from "react-scroll";
 import * as palette from "../../styles/Variables";
 const trackingInExpand = keyframes`
   0% {
@@ -89,6 +89,7 @@ export const HeroH2 = styled.h2`
   color: ${palette.LIGHT};
   font-size: 30px;
   text-align: center;
+  line-height: 30px;
   @media screen and (max-width: ${palette.BP_MEDIUM}) {
     font-size: 20px;
   }
@@ -103,6 +104,8 @@ export const HeroP = styled.p`
   font-size: 24px;
   text-align: center;
   max-width: 60vw;
+  line-height: 30px;
+
   @media screen and (max-width: ${palette.BP_MEDIUM}) {
     font-size: 20px;
   }
@@ -112,20 +115,50 @@ export const HeroP = styled.p`
 `;
 
 export const HeroBtnWrapper = styled.div`
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
+  margin-top: 50px;
   align-items: center;
 `;
+export const LinkScroll = styled(LinkS)`
+  cursor: pointer;
+  display: block;
+  width: 250px;
+  height: 60px;
+  position: relative;
+  border: 4px solid ${palette.LIGHT};
+  color: ${palette.LIGHT};
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
 
-export const ArrowForward = styled(MdArrowForward)`
-  margin-left: -10px;
-  font-size: 40px;
-  margin-bottom: -14px;
-`;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    border: 3.5px solid ${palette.LIGHT};
+    width: calc(100% - 60px);
+    height: 60px;
+    transition: 0.5s ease;
+  }
 
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-  margin-left: -10px;
-  font-size: 40px;
-  margin-bottom: -14px;
+  &::after {
+    top: -20px;
+    left: -20px;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  &::before {
+    bottom: -20px;
+    right: -20px;
+    border-left: none;
+    border-top: none;
+  }
+
+  &:hover:after,
+  &:hover:before {
+    width: calc(100% + 8px);
+    height: 20px;
+  }
 `;

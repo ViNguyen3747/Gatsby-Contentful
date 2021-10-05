@@ -8,11 +8,13 @@ const BoxStyle = () => `
 export const ContactContainer = styled.form`
   justify-content: flex-start;
   align-items: center;
+  width: min-content;
 `;
 
 export const InputWrapper = styled.div`
   padding-bottom: 20px;
   color: ${palette.DARK};
+  font-weight: bold;
 `;
 
 export const Label = styled.label`
@@ -35,10 +37,44 @@ export const TextArea = styled.textarea`
   ${BoxStyle};
 `;
 
-export const Button = styled.input`
-  width: 70px;
-  height: 30px;
-  background-color: ${palette.DARK_GREEN};
+export const Button = styled.button`
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  position: relative;
+  background-color: ${palette.YELLOW_GREEN};
   color: ${palette.LIGHT};
-  border-radius: 5px;
+  border: 0;
+  text-align: center;
+  margin-left: 30px;
+  font-weight: bold;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    border: 3.5px solid ${palette.YELLOW_GREEN};
+    width: calc(100% - 40px);
+    height: 40px;
+    transition: 0.5s ease;
+  }
+
+  &::after {
+    top: -10px;
+    left: -10px;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  &::before {
+    bottom: -10px;
+    right: -10px;
+    border-left: none;
+    border-top: none;
+  }
+
+  &:hover:after,
+  &:hover:before {
+    width: calc(100% + 5px);
+    height: 15px;
+  }
 `;

@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
         }
     body {
         overflow: overlay;
+        overflow-x: hidden;
     }
 
     ::-webkit-scrollbar {

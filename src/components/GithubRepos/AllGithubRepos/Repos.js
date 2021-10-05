@@ -1,13 +1,12 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { GithubContainer, GithubWrapper, ImgWrap, Img } from "./ReposElement";
+import { GithubContainer, GithubWrapper } from "./ReposElement";
 import {
   Circle,
   GithubName,
   RepoCard,
   LanguageWrapper,
 } from "../GithubReposElements";
-import Coding from "../../../../static/images/coding.svg";
 import HorizontalScroll from "../../horizontal-scroll";
 import Header from "../../Header";
 
@@ -48,9 +47,6 @@ const Repos = () => {
       <HorizontalScroll>
         <GithubContainer id="github">
           <GithubWrapper columns={Math.ceil(repos.length / 2)}>
-            {/* <ImgWrap>
-              <Img src={Coding} alt="Github Repositories" />
-            </ImgWrap> */}
             {repos.map((repo, index) => (
               <RepoCard
                 key={index}

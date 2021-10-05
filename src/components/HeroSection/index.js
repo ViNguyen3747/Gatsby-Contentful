@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Video from "../../../static/videos/video.mp4";
+import React from "react";
+import Video from "../../../static/video.mp4";
 import {
   HeroContainer,
   HeroBg,
@@ -9,15 +9,9 @@ import {
   HeroH2,
   HeroP,
   HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight,
+  LinkScroll,
 } from "./HeroElements";
-import { LinkScroll } from "../LinkElements";
 const HeroSection = () => {
-  const [hover, setHover] = useState(false);
-  const onHover = () => {
-    setHover(!hover);
-  };
   return (
     <HeroContainer id="home">
       <HeroBg>
@@ -33,8 +27,6 @@ const HeroSection = () => {
         <HeroBtnWrapper>
           <LinkScroll
             to="about"
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
             primary="true"
             smooth={true}
             duration={500}
@@ -42,7 +34,7 @@ const HeroSection = () => {
             exact="true"
             offset={-80}
           >
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
+            Get started
           </LinkScroll>
         </HeroBtnWrapper>
       </HeroContent>
