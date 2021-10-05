@@ -42,7 +42,7 @@ export const Button = styled.button`
   width: 150px;
   height: 40px;
   position: relative;
-  background-color: ${palette.YELLOW_GREEN};
+  background-color: ${palette.DARK_GREEN};
   color: ${palette.LIGHT};
   border: 0;
   text-align: center;
@@ -52,7 +52,7 @@ export const Button = styled.button`
   &::before {
     content: "";
     position: absolute;
-    border: 3.5px solid ${palette.YELLOW_GREEN};
+    border: 3.5px solid ${palette.DARK_GREEN};
     width: calc(100% - 40px);
     height: 40px;
     transition: 0.5s ease;
