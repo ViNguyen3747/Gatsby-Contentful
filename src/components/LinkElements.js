@@ -4,7 +4,7 @@ import { Link as LinkS } from "react-scroll";
 import * as palette from "../styles/Variables";
 const LinkStyle = ({ dark, primary }) => `
     color: ${dark ? palette.DARK : palette.LIGHT};
-    font-size: 20px;
+    font-size: 25px;
     margin-right: 10px;
     font-weight: bold;
     text-decoration: none;

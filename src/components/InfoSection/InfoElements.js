@@ -56,8 +56,8 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
   color: ${palette.GREEN};
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 25px;
+  line-height: 25px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -78,8 +78,8 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
   margin-bottom: 35px;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 35px;
   color: ${({ darkText }) => (darkText ? palette.DARK : palette.LIGHT)};
 `;
 

@@ -7,6 +7,7 @@ export const PostContainer = styled.section`
   position: relative;
   width: fit-content;
   height: max-content;
+  margin-top: 10vh;
 `;
 
 export const PostsWrapper = styled.div`
@@ -21,7 +22,6 @@ export const PostsWrapper = styled.div`
 
 export const PostsCard = styled(Link)`
   text-decoration: none;
-  margin-top: 70px;
   position: relative;
   background: ${palette.LIGHT};
   display: flex;
@@ -35,7 +35,7 @@ export const PostsCard = styled(Link)`
   text-align: center;
   padding: 20px;
   width: 400px;
-  height: 500px;
+  height: 550px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 
@@ -57,17 +57,19 @@ export const PostsIcon = styled(GatsbyImage)`
 `;
 
 export const PostsH1 = styled.h1`
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 20px;
   @media screen and (max-width: ${palette.BP_SMALL}) {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   @media screen and (min-width: ${palette.BP_XXLARGE}) {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 `;
 
 export const PostsP = styled.div`
   height: max-content;
+  margin-bottom: 20px;
 `;
 
 export const Tag = styled.span`

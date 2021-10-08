@@ -64,25 +64,26 @@ export const TitleWrapper = styled.div`
   }
 `;
 export const PostsH1 = styled.h1`
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   color: ${palette.DARK_GREEN};
   @media screen and (max-width: ${palette.BP_SMALL}) {
-    font-size: 1.3rem;
-    line-height: 2rem;
-  }
-  @media screen and (min-width: ${palette.BP_XXLARGE}) {
     font-size: 2.5rem;
     line-height: 3rem;
+  }
+  @media screen and (min-width: ${palette.BP_XXLARGE}) {
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
 `;
 
 export const PostsP = styled.p`
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   color: ${palette.DARK};
+  font-weight: lighter;
   @media screen and (min-width: ${palette.BP_XXLARGE}) {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 `;

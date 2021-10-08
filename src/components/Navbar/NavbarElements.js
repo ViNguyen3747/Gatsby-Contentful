@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -34,7 +34,7 @@ export const NavLogo = styled.div`
   color: ${palette.LIGHT};
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5 rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
