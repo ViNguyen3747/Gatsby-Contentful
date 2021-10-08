@@ -41,14 +41,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["Encode Sans Expanded"],
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-scroll-indicator`,
       options: {
         // set the color you want for your progress bar here
