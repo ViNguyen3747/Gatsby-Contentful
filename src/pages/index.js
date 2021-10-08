@@ -25,6 +25,11 @@ const IndexPage = () => {
             img {
               gatsbyImageData(placeholder: DOMINANT_COLOR, formats: WEBP)
             }
+            video {
+              file {
+                url
+              }
+            }
           }
         }
       }
@@ -36,15 +41,16 @@ const IndexPage = () => {
   };
 
   const infos = data.allContentfulInfoSection.edges;
-  const aboutMeInfo = infos[0].node;
-  const projectInfo = infos[1].node;
-  const contactInfo = infos[2].node;
+  const homeInfo = infos[0].node;
+  const aboutMeInfo = infos[1].node;
+  const projectInfo = infos[2].node;
+  const contactInfo = infos[3].node;
   return (
     <>
       <Seo title="Tina's Portfolio" />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <HeroSection />
+      <HeroSection info={homeInfo} />
       <InfoSection {...AboutSection} info={aboutMeInfo} />
       <About />
       <InfoSection {...ProjectSection} info={projectInfo} />

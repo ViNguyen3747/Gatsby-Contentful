@@ -1,6 +1,5 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import * as palette from "../../styles/Variables";
 import {
   PostContainer,
   PostsH1,
@@ -31,7 +30,7 @@ const About = () => {
   `);
   const infos = data.allContentfulFact.edges;
   return (
-    <HorizontalScroll bg={palette.LIGHT}>
+    <HorizontalScroll>
       <PostContainer id="aboutInfo">
         <PostsWrapper>
           {infos.map(({ node: info }) => (

@@ -4,10 +4,10 @@ require("dotenv").config({
 });
 module.exports = {
   siteMetadata: {
-    url: "https://www.yourdomain.tld",
+    url: "https://viportfolio.gatsbyjs.io/",
     title: "Contentful with Gatsby",
     author: "@ThiKieuViNguye1",
-    image: "/avatar.png",
+    image: "/avatar.webp",
     description: "Building portfolio powered by Contentful and GatsbyJs",
     keywords:
       "portfolio, GatsbyJS, Contentful, Styled Component, Responsive Design",

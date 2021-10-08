@@ -1,5 +1,4 @@
 import React from "react";
-import Video from "../../../static/video.mp4";
 import {
   HeroContainer,
   HeroBg,
@@ -11,11 +10,17 @@ import {
   HeroBtnWrapper,
   LinkScroll,
 } from "./HeroElements";
-const HeroSection = () => {
+const HeroSection = ({ info }) => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="videomp4" />
+        <VideoBg
+          autoPlay
+          loop
+          muted
+          src={info.video.file.url}
+          type="videomp4"
+        />
       </HeroBg>
       <HeroContent>
         <HeroH2>Welcome To </HeroH2>

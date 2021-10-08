@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import styled from "styled-components";
 import * as palette from "../styles/Variables";
 import BackgroundImg from "../../static/images/background.webp";
@@ -68,7 +68,7 @@ const applyScrollListener = (ref, setTranslateX) => {
   });
 };
 
-export default ({ bg, children }) => {
+const Horizontal = ({ children }) => {
   const [dynamicHeight, setDynamicHeight] = useState(null);
   const [translateX, setTranslateX] = useState(0);
 
@@ -93,7 +93,7 @@ export default ({ bg, children }) => {
   }, [containerRef, objectRef]);
 
   return (
-    <TallOuterContainer dynamicHeight={dynamicHeight} bg={bg}>
+    <TallOuterContainer dynamicHeight={dynamicHeight}>
       <StickyInnerContainer ref={containerRef}>
         <HorizontalTranslateContainer translateX={translateX} ref={objectRef}>
           {children}
@@ -102,3 +102,5 @@ export default ({ bg, children }) => {
     </TallOuterContainer>
   );
 };
+
+export default Horizontal;
