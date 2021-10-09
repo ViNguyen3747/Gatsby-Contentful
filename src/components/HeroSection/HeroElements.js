@@ -122,13 +122,13 @@ export const LinkScroll = styled(LinkS)`
   cursor: pointer;
   display: block;
   width: 250px;
-  height: 60px;
+  height: max-content;
   position: relative;
   border: 3.5px solid ${palette.LIGHT};
   color: ${palette.LIGHT};
   background-color: transparent;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   font-weight: bold;
   font-size: 20px;
 

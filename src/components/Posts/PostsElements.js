@@ -7,7 +7,6 @@ export const PostContainer = styled.section`
   position: relative;
   width: fit-content;
   height: max-content;
-  margin-top: 10vh;
 `;
 
 export const PostsWrapper = styled.div`
@@ -16,7 +15,7 @@ export const PostsWrapper = styled.div`
   padding: 0 0 0 100px;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  top: 5vh;
   align-items: center;
 `;
 

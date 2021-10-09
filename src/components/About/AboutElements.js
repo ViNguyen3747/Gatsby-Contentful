@@ -35,7 +35,7 @@ export const PostsCard = styled.div`
     rgba(255, 255, 255, 0.3)
   );
   backdrop-filter: blur(2rem);
-  width: 350px;
+  width: 300px;
   height: 500px;
   padding: 30px;
   @media screen and (min-width: ${palette.BP_XXLARGE}) {
@@ -64,26 +64,25 @@ export const TitleWrapper = styled.div`
   }
 `;
 export const PostsH1 = styled.h1`
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   color: ${palette.DARK_GREEN};
   @media screen and (max-width: ${palette.BP_SMALL}) {
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
   @media screen and (min-width: ${palette.BP_XXLARGE}) {
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 `;
 
 export const PostsP = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2rem;
   color: ${palette.DARK};
-  font-weight: lighter;
   @media screen and (min-width: ${palette.BP_XXLARGE}) {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 3rem;
   }
 `;

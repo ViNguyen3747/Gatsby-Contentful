@@ -45,7 +45,7 @@ const HorizontalTranslateContainer = styled.div.attrs(({ translateX }) => ({
 }))`
   position: absolute;
   height: 100%;
-  padding-top: 8%;
+  margin-top: 5%;
   will-change: transform;
 `;
 
