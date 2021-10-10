@@ -20,18 +20,6 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACEID,
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `ViPortfolio`,
-        short_name: `ViPortfolio`,
-        start_url: `/`,
-        background_color: `#212121`,
-        theme_color: `#177629`,
-        display: `standalone`,
-        icon: `src/images/avatar.png`,
-      },
-    },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
@@ -70,6 +58,18 @@ module.exports = {
         paths: ["/"],
         // Configure the z-index of the indicator element
         zIndex: `9999`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `ViPortfolio`,
+        short_name: `ViPortfolio`,
+        start_url: `/`,
+        background_color: `#212121`,
+        theme_color: `#177629`,
+        display: `standalone`,
+        icon: `src/images/avatar.png`,
       },
     },
     {
