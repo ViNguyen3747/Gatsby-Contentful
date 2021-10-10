@@ -70,6 +70,9 @@ module.exports = {
         theme_color: `#177629`,
         display: `standalone`,
         icon: `src/images/avatar.png`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
     {
