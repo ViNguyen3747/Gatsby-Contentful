@@ -53,15 +53,15 @@ export const ContactUs = ({ bg, id, imgStart, lightText, alt, info }) => {
                 <Heading lightText={lightText}>{info.headline}</Heading>
                 <ContactContainer ref={form} onSubmit={sendEmail}>
                   <InputWrapper>
-                    <Label for="user_name">Name</Label>
+                    <Label htmlFor="user_name">Name</Label>
                     <TextInput type="text" name="user_name" required />
                   </InputWrapper>
                   <InputWrapper>
-                    <Label for="user_email">Email</Label>
+                    <Label htmlFor="user_email">Email</Label>
                     <TextInput type="email" name="user_email" required />
                   </InputWrapper>
                   <InputWrapper>
-                    <Label for="message">Message</Label>
+                    <Label htmlFor="message">Message</Label>
                     <TextArea name="message" required />
                   </InputWrapper>
                   <InputWrapper>

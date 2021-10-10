@@ -83,13 +83,6 @@ const Horizontal = ({ children }) => {
     handleDynamicHeight(objectRef, setDynamicHeight);
     window.addEventListener("resize", resizeHandler);
     applyScrollListener(containerRef, setTranslateX);
-    return () => {
-      window.removeEventListener("resize", resizeHandler);
-      window.removeEventListener(
-        "Scroll",
-        setTranslateX(-containerRef?.current?.offsetTop)
-      );
-    };
   }, [containerRef, objectRef]);
 
   return (
