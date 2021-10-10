@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import * as palette from "../styles/Variables";
-import BackgroundImg from "../../static/images/background.webp";
+import BackgroundImg from "../images/background.webp";
 
 const TallOuterContainer = styled.div.attrs(({ dynamicHeight }) => ({
   style: { height: `${dynamicHeight}px` },

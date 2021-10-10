@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
 import * as palette from "../../styles/Variables";
-import BackgroundImg from "../../../static/images/background.webp";
+import BackgroundImg from "../../images/background.webp";
 const layout = ({ num }) => `
   column-count: ${num};
   -moz-column-count: ${num};
