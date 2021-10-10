@@ -10,12 +10,11 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "Encode Sans Expanded", sans-serif;
         }
     body {
-        overflow: overlay;
         overflow-x: hidden;
     }
 
     ::-webkit-scrollbar {
-        background: transparent;
+        background-color: #010606;
         width: 10px;
         height: 10px;
     }

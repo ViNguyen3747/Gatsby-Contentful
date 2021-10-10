@@ -1,11 +1,12 @@
 import React from "react";
-import Layout from "./src/components/Layout";
+import Footer from "./src/components/Footer";
 import { GlobalStyle } from "./src/styles/GlobalStyle";
 export function wrapRootElement({ element }) {
   return (
     <>
       <GlobalStyle />
-      <Layout>{element}</Layout>
+      {element}
+      <Footer />
     </>
   );
 }
