@@ -67,24 +67,3 @@ export const SideBtnWrap = styled.div`
   display: flex;
   justify-content: center;
 `;
-
-// export const SidebarRoute = styled(LinkRouter)`
-//   border-radius: 50px;
-//   background: ${palette.GREEN};
-//   white-space: nowrap;
-//   padding: 16px 64px;
-//   color: ${palette.DARK};
-//   font-size: 16px;
-//   outline: none;
-//   border: none;
-//   color: ${palette.LIGHT};
-//   cursor: pointer;
-//   transition: all 0.2s ease-in-out;
-//   text-decoration: none;
-//   &:hover {
-//     transition: all 0.2s ease-in-out;
-//     background: ${palette.LIGHT};
-
-//     color: ${palette.DARK};
-//   }
-// `;
