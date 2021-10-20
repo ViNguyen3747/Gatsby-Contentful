@@ -8,8 +8,8 @@ import {
   HeroH2,
   HeroP,
   HeroBtnWrapper,
-  LinkScroll,
 } from "./HeroElements";
+import { ButtonScroll } from "../LinkElements";
 const HeroSection = ({ info }) => {
   return (
     <HeroContainer id="home">
@@ -30,9 +30,8 @@ const HeroSection = ({ info }) => {
           development skills
         </HeroP>
         <HeroBtnWrapper>
-          <LinkScroll
+          <ButtonScroll
             to="about"
-            primary="true"
             smooth={true}
             duration={500}
             spy={true}
@@ -40,7 +39,7 @@ const HeroSection = ({ info }) => {
             offset={-80}
           >
             Get started
-          </LinkScroll>
+          </ButtonScroll>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

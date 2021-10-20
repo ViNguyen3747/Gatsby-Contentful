@@ -17,16 +17,16 @@ export const AboutSection = {
 
 export const ProjectSection = {
   id: "projects",
-  bg: palette.LIGHT,
-  lightText: false,
+  bg: palette.DARK,
+  lightText: true,
   topLine: "Self Projects",
   buttonRoute: "To My Self-Projects",
   buttonScroll: "Github Repos",
   imgStart: false,
   alt: "discover",
-  dark: true,
+  dark: false,
   primary: false,
-  darkText: true,
+  darkText: false,
   route: "projects",
   to: "github",
 };

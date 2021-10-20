@@ -36,6 +36,51 @@ const LinkStyle = ({ dark, primary }) => `
         color: ${palette.LIGHT_GREEN};
     }
 `;
+
+const ButtonStyle = ({ dark, primary }) => `
+  cursor: pointer;
+  display: block;
+  width: 250px;
+  height: max-content;
+  position: relative;
+  border: 3.5px solid ${dark ? palette.DARK_GREEN : palette.LIGHT};
+  color: ${palette.LIGHT};
+  background-color: ${primary ? palette.DARK_GREEN : "transparent"};
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 20px;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    border: 3.5px solid ${dark ? palette.DARK_GREEN : palette.LIGHT};
+    width: calc(100% - 60px);
+    height: 60px;
+    transition: 0.5s ease;
+  }
+
+  &::after {
+    top: -20px;
+    left: -20px;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  &::before {
+    bottom: -20px;
+    right: -20px;
+    border-left: none;
+    border-top: none;
+  }
+
+  &:hover:after,
+  &:hover:before {
+    width: calc(100% + 8px);
+    height: 20px;
+  }
+`;
 export const LinkScroll = styled(LinkS)`
   ${LinkStyle};
 `;
@@ -45,4 +90,12 @@ export const LinkRouter = styled(LinkR)`
 
 export const LinkStandard = styled.a`
   ${LinkStyle};
+`;
+
+export const ButtonScroll = styled(LinkS)`
+  ${ButtonStyle};
+`;
+
+export const ButtonStandard = styled.button`
+  ${ButtonStyle};
 `;

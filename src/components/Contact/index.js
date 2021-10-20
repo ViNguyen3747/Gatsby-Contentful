@@ -17,9 +17,8 @@ import {
   Label,
   TextInput,
   TextArea,
-  Button,
 } from "./ContactElements";
-
+import { ButtonStandard } from "../LinkElements";
 export const ContactUs = ({ bg, id, imgStart, lightText, alt, info }) => {
   const form = useRef();
 
@@ -75,7 +74,14 @@ export const ContactUs = ({ bg, id, imgStart, lightText, alt, info }) => {
                     <TextArea name="message" id="message" required />
                   </InputWrapper>
                   <InputWrapper>
-                    <Button type="submit">Send</Button>
+                    <ButtonStandard
+                      style={{ transform: "scale(0.5)" }}
+                      primary="true"
+                      dark="true"
+                      type="submit"
+                    >
+                      Send
+                    </ButtonStandard>
                   </InputWrapper>
                 </ContactContainer>
               </TextWrapper>

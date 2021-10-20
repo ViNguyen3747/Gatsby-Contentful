@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 2;
   transition: 0.8s all ease;
 `;
 
@@ -21,10 +21,9 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 80px;
-  z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 80vw;
+  width: 80vw;
 `;
 
 export const NavLogo = styled.div`

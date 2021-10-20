@@ -4,63 +4,40 @@ import * as palette from "../../styles/Variables";
 
 export const PostContainer = styled.section`
   position: relative;
-  width: fit-content;
-  min-height: 100vh;
-`;
-
-export const PostsWrapper = styled.div`
-  position: relative;
-  padding: 10vh;
-  height: 100%;
+  height: 90vh;
+  background-color: ${palette.LIGHT};
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
   align-items: center;
+  margin-bottom: 0;
 `;
 
 export const PostsCard = styled.div`
   position: relative;
   background: ${palette.LIGHT};
-  display: flex;
-  flex-direction: column;
-  margin-right: 80px;
-  align-items: center;
-  text-align: center;
+
   font-weight: bolder;
   border-radius: 10px;
-
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
   backdrop-filter: blur(2rem);
-  width: 300px;
-  height: 500px;
-  padding: 30px;
-  @media screen and (min-width: ${palette.BP_XXLARGE}) {
-    transform: scale(1.6);
-  }
+  width: max-content;
+  height: auto;
+  padding: 10px;
+  margin: 20px;
+  margin-left: 100px;
 `;
 
 export const PostsIcon = styled(GatsbyImage)`
   height: auto;
   width: 250px;
   @media screen and (min-width: ${palette.BP_XXLARGE}) {
-    width: 360px;
+    width: 350px;
   }
+  border-radius: 10px;
+  backdrop-filter: blur(2rem);
 `;
 export const TitleWrapper = styled.div`
   height: fit-content;
   width: 100%;
-  &:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    margin: 10px 0 20px 0;
-    background-color: ${palette.DARK_GREEN};
-  }
 `;
 export const PostsH1 = styled.h1`
   font-size: 1.5rem;

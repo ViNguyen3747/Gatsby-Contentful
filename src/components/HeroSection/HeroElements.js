@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import { Link as LinkS } from "react-scroll";
 import * as palette from "../../styles/Variables";
 const trackingInExpand = keyframes`
   0% {
@@ -116,48 +115,4 @@ export const HeroP = styled.p`
 export const HeroBtnWrapper = styled.div`
   margin-top: 50px;
   align-items: center;
-`;
-export const LinkScroll = styled(LinkS)`
-  cursor: pointer;
-  display: block;
-  width: 250px;
-  height: max-content;
-  position: relative;
-  border: 3.5px solid ${palette.LIGHT};
-  color: ${palette.LIGHT};
-  background-color: transparent;
-  text-align: center;
-  padding: 20px;
-  font-weight: bold;
-  font-size: 20px;
-
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    border: 3.5px solid ${palette.LIGHT};
-    width: calc(100% - 60px);
-    height: 60px;
-    transition: 0.5s ease;
-  }
-
-  &::after {
-    top: -20px;
-    left: -20px;
-    border-right: none;
-    border-bottom: none;
-  }
-
-  &::before {
-    bottom: -20px;
-    right: -20px;
-    border-left: none;
-    border-top: none;
-  }
-
-  &:hover:after,
-  &:hover:before {
-    width: calc(100% + 8px);
-    height: 20px;
-  }
 `;
