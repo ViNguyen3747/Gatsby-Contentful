@@ -8,7 +8,6 @@ export const PostContainer = styled.section`
   height: 100vh;
   overflow-y: hidden;
   overflow-x: scroll;
-  touch-action: none;
 `;
 
 export const PostsWrapper = styled.div`

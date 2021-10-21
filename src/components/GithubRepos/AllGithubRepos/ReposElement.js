@@ -3,7 +3,6 @@ export const GithubContainer = styled.section`
   position: relative;
   height: 100vh;
   overflow-x: scroll;
-  touch-action: none;
 `;
 
 export const GithubWrapper = styled.div`
