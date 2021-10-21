@@ -62,7 +62,6 @@ const About = () => {
   const second = infos.slice(1, 8);
   const third = infos[8].node;
   const fourth = infos.slice(9, infos.length);
-  console.log(first, second, third, fourth);
   return (
     <PostContainer id="aboutInfo">
       <Parallax pages={6} horizontal>

@@ -1,15 +1,19 @@
 import styled from "styled-components";
 export const GithubContainer = styled.section`
   position: relative;
-  width: fit-content;
+  height: 100vh;
+  overflow-x: scroll;
 `;
 
 export const GithubWrapper = styled.div`
-  position: relative;
-  height: 100%;
   display: grid;
-  padding: 20vh 0 50px 50px;
+  position: relative;
+  width: 100%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   grid-template-columns: repeat(${(props) => props.columns}, 500px);
   grid-auto-rows: 90px;
-  grid-gap: 30px;
+  grid-gap: 5vh;
+  padding-left: 15vh;
 `;

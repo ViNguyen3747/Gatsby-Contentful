@@ -5,17 +5,19 @@ import * as palette from "../../styles/Variables";
 
 export const PostContainer = styled.section`
   position: relative;
-  width: fit-content;
-  height: max-content;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: scroll;
 `;
 
 export const PostsWrapper = styled.div`
   position: relative;
-  height: 100%;
-  padding: 0 0 0 100px;
+  padding: 15vh 0 0 100px;
   display: flex;
   flex-flow: row nowrap;
-  top: 5vh;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   align-items: center;
 `;
 

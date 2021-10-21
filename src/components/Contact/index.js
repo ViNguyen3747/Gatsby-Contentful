@@ -33,7 +33,7 @@ export const ContactUs = ({ bg, id, imgStart, lightText, alt, info }) => {
         process.env.GATSBY_USER_ID
       )
       .then(
-        (result) => {
+        () => {
           form.current.reset();
         },
         (error) => {

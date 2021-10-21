@@ -7,7 +7,6 @@ import {
   RepoCard,
   LanguageWrapper,
 } from "../GithubReposElements";
-import HorizontalScroll from "../../horizontal-scroll";
 import Header from "../../Header";
 
 const Repos = () => {
@@ -44,30 +43,29 @@ const Repos = () => {
   return (
     <>
       <Header link="/" title="Back" />
-      <HorizontalScroll>
-        <GithubContainer id="github">
-          <GithubWrapper columns={Math.ceil(repos.length / 2)}>
-            {repos.map((repo, index) => (
-              <RepoCard
-                key={index}
-                href={repo.node.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <GithubName>{repo.node.name}</GithubName>
-                <LanguageWrapper>
-                  {repo.node.languages.nodes.map((l) => (
-                    <div key={l.name}>
-                      <Circle bg={l.color} />
-                      {l.name}
-                    </div>
-                  ))}
-                </LanguageWrapper>
-              </RepoCard>
-            ))}
-          </GithubWrapper>
-        </GithubContainer>
-      </HorizontalScroll>
+
+      <GithubContainer id="github">
+        <GithubWrapper columns={Math.ceil(repos.length / 4)}>
+          {repos.map((repo, index) => (
+            <RepoCard
+              key={index}
+              href={repo.node.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GithubName>{repo.node.name}</GithubName>
+              <LanguageWrapper>
+                {repo.node.languages.nodes.map((l) => (
+                  <div key={l.name}>
+                    <Circle bg={l.color} />
+                    {l.name}
+                  </div>
+                ))}
+              </LanguageWrapper>
+            </RepoCard>
+          ))}
+        </GithubWrapper>
+      </GithubContainer>
     </>
   );
 };
