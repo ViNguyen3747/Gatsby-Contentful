@@ -20,6 +20,7 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACEID,
       },
     },
+    `gatsby-plugin-preact`,
     "gatsby-plugin-styled-components",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
