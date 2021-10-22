@@ -38,6 +38,7 @@ const Projects = ({ data }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   href={githubLink}
+                  dark="true"
                 >
                   Git Hub Source
                 </LinkStandard>
@@ -48,6 +49,7 @@ const Projects = ({ data }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                     href={websiteLink}
+                    dark="true"
                   >
                     Demo
                   </LinkStandard>

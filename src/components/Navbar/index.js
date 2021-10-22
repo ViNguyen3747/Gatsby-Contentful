@@ -61,7 +61,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-75}
+                offset={-80}
               >
                 Projects
               </NavLinks>
@@ -73,7 +73,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-75}
+                offset={-80}
               >
                 Github Repos
               </NavLinks>
@@ -85,7 +85,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-75}
+                offset={-80}
               >
                 Contact Me
               </NavLinks>

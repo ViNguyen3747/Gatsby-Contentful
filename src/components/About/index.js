@@ -82,9 +82,8 @@ const About = () => {
             exact="true"
             offset={-75}
             primary="true"
-            dark="true"
           >
-            Learn More
+            To Projects
           </ButtonScroll>
         </ParallaxLayer>
       </Parallax>

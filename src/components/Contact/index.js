@@ -10,6 +10,7 @@ import {
   Column2,
   Img,
   ImgWrap,
+  TopLine,
 } from "../InfoSection/InfoElements";
 import {
   ContactContainer,
@@ -19,7 +20,16 @@ import {
   TextArea,
 } from "./ContactElements";
 import { ButtonStandard } from "../LinkElements";
-export const ContactUs = ({ bg, id, imgStart, lightText, alt, info }) => {
+export const ContactUs = ({
+  bg,
+  id,
+  imgStart,
+  lightText,
+  alt,
+  info,
+  topLine,
+  textColor,
+}) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -49,7 +59,7 @@ export const ContactUs = ({ bg, id, imgStart, lightText, alt, info }) => {
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <Heading lightText={lightText}>{info.headline}</Heading>
+                <Heading lightText={lightText}>{topLine}</Heading>
                 <ContactContainer ref={form} onSubmit={sendEmail}>
                   <InputWrapper>
                     <Label htmlFor="user_name">Name</Label>
@@ -75,7 +85,7 @@ export const ContactUs = ({ bg, id, imgStart, lightText, alt, info }) => {
                   </InputWrapper>
                   <InputWrapper>
                     <ButtonStandard
-                      style={{ transform: "scale(0.5)" }}
+                      style={{ transform: "scale(0.6)" }}
                       primary="true"
                       dark="true"
                       type="submit"

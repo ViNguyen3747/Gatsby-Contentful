@@ -3,8 +3,9 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import * as palette from "../../styles/Variables";
 
 export const InfoContainer = styled.div`
-  color: ${palette.LIGHT};
+  color: ${({ textColor }) => textColor};
   background: ${({ bg }) => bg};
+  padding: 30px 0;
   @media screen and (max-width: ${palette.BP_MEDIUM}) {
     padding: 100px 0;
   }
@@ -20,6 +21,7 @@ export const InfoWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+  margin-bottom: 0;
 `;
 
 export const InfoRow = styled.div`

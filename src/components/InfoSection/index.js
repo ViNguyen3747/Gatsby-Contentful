@@ -31,10 +31,11 @@ const index = ({
   route,
   link,
   info,
+  textColor,
 }) => {
   return (
     <>
-      <InfoContainer bg={bg} id={id}>
+      <InfoContainer bg={bg} id={id} textColor={textColor}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>

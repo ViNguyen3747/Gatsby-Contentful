@@ -2,12 +2,17 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import * as palette from "../../styles/Variables";
-
+import BackgroundImg from "../../images/leaf.webp";
 export const PostContainer = styled.section`
   position: relative;
   height: 100vh;
   overflow-y: hidden;
   overflow-x: scroll;
+  background-image: url(${BackgroundImg});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 `;
 
 export const PostsWrapper = styled.div`

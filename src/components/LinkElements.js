@@ -39,6 +39,7 @@ const LinkStyle = ({ dark, primary }) => `
 
 const ButtonStyle = ({ dark, primary }) => `
   cursor: pointer;
+  text-decoration: none;
   display: block;
   width: 250px;
   height: max-content;

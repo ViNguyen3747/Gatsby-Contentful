@@ -10,14 +10,14 @@ export const AboutSection = {
   alt: "introduction",
   dark: false,
   primary: false,
-  darkText: false,
+  textColor: palette.LIGHT,
   to: "aboutInfo",
   link: "/Vi_Resume.pdf",
 };
 
 export const ProjectSection = {
   id: "projects",
-  bg: palette.DARK,
+  bg: palette.DARK_GREEN,
   lightText: true,
   topLine: "Self Projects",
   buttonRoute: "To My Self-Projects",
@@ -26,7 +26,7 @@ export const ProjectSection = {
   alt: "discover",
   dark: false,
   primary: false,
-  darkText: false,
+  textColor: palette.LIGHT,
   route: "projects",
   to: "github",
 };
@@ -40,5 +40,5 @@ export const ContactSection = {
   alt: "email",
   dark: false,
   primary: false,
-  darkText: false,
+  textColor: palette.LIGHT,
 };

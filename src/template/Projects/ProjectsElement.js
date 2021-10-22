@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
 import * as palette from "../../styles/Variables";
-import BackgroundImg from "../../images/background.webp";
+import BackgroundImg from "../../images/leaf.webp";
 const layout = ({ num }) => `
   column-count: ${num};
   -moz-column-count: ${num};
@@ -14,6 +14,7 @@ const layout = ({ num }) => `
 export const ProjectContainer = styled.div`
   position: relative;
   background-image: url(${BackgroundImg});
+  background-position: 0% 20%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -23,25 +24,9 @@ export const ProjectContainer = styled.div`
   justify-content: center;
   display: flex;
   background-color: ${palette.DARK_GREEN};
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent);
-    z-index: 2;
-  }
 `;
 
 export const ProjectWrapper = styled.div`
-  z-index: 3;
   margin: 0 auto;
   width: 100%;
   background: transparent;
@@ -85,7 +70,7 @@ export const Title = styled.h1`
   font-size: 2.2rem;
   line-height: 1.1;
   font-weight: 600;
-  color: ${palette.LIGHT};
+  color: ${palette.DARK_GREEN};
 
   @media screen and (max-width: ${palette.BP_SMALL}) {
     font-size: 32px;

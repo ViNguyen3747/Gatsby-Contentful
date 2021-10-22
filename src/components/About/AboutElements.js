@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
 import * as palette from "../../styles/Variables";
-
+import BackgroundImg from "../../images/leaf.webp";
 export const PostContainer = styled.section`
   position: relative;
   height: 90vh;
@@ -10,10 +10,14 @@ export const PostContainer = styled.section`
   flex-flow: row nowrap;
   align-items: center;
   margin-bottom: 0;
+  background-image: url(${BackgroundImg});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 `;
 
 export const PostsCard = styled.div`
-  position: relative;
   background: ${palette.LIGHT};
 
   font-weight: bolder;
@@ -29,6 +33,7 @@ export const PostsCard = styled.div`
 export const PostsIcon = styled(GatsbyImage)`
   height: auto;
   width: 250px;
+
   @media screen and (min-width: ${palette.BP_XXLARGE}) {
     width: 350px;
   }

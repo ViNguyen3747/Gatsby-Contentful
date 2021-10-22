@@ -3,7 +3,7 @@ import * as palette from "../../styles/Variables";
 
 export const ReposContainer = styled.div`
   color: ${palette.LIGHT};
-  background: ${palette.DARK_GREEN};
+  background: ${palette.DARK};
 
   @media screen and (max-width: ${palette.BP_MEDIUM}) {
     padding: 100px 0;
