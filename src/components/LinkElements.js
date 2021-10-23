@@ -37,7 +37,7 @@ const LinkStyle = ({ dark, primary }) => `
     }
 `;
 
-const ButtonStyle = ({ dark, primary }) => `
+const ButtonStyle = ({ dark, primary, marginTop }) => `
   cursor: pointer;
   text-decoration: none;
   display: block;
@@ -51,6 +51,7 @@ const ButtonStyle = ({ dark, primary }) => `
   padding: 20px;
   font-weight: bold;
   font-size: 20px;
+  margin-top: ${marginTop};
 
   &::after,
   &::before {

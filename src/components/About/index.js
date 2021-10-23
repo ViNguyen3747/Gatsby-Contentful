@@ -13,19 +13,15 @@ import { ButtonScroll } from "../LinkElements";
 
 const Layer = ({ offset, info }) => (
   <>
-    <ParallaxLayer
-      offset={offset}
-      speed={0.5}
-      style={{ marginTop: `${info.marginTop}` }}
-    >
-      <PostsIcon image={info.illustration.gatsbyImageData} alt={info.title} />
+    <ParallaxLayer offset={offset} speed={0.5}>
+      <PostsIcon
+        marginTop={info.marginTop}
+        image={info.illustration.gatsbyImageData}
+        alt={info.title}
+      />
     </ParallaxLayer>
-    <ParallaxLayer
-      offset={offset + 0.1}
-      speed={0.6}
-      style={{ marginTop: `${info.marginTop}` }}
-    >
-      <PostsCard>
+    <ParallaxLayer offset={offset + 0.1} speed={0.6}>
+      <PostsCard marginTop={info.marginTop}>
         <TitleWrapper>
           <PostsH1>{info.title}</PostsH1>
         </TitleWrapper>
@@ -65,7 +61,7 @@ const About = () => {
   return (
     <PostContainer id="aboutInfo">
       <Parallax pages={6} horizontal>
-        <Layer offset={0} info={first} style={{ backgroundColor: "black" }} />
+        <Layer offset={0} info={first} />
         {second.map(({ node: info }) => (
           <Layer key={info.id} offset={info.offset} info={info} />
         ))}
@@ -73,7 +69,7 @@ const About = () => {
         {fourth.map(({ node: info }) => (
           <Layer key={info.id} offset={info.offset} info={info} />
         ))}
-        <ParallaxLayer offset={5.4} speed={0.6} style={{ marginTop: "40vh" }}>
+        <ParallaxLayer offset={5.4} speed={0.6}>
           <ButtonScroll
             to="projects"
             smooth={true}
@@ -82,8 +78,9 @@ const About = () => {
             exact="true"
             offset={-75}
             primary="true"
+            marginTop="40vh"
           >
-            To Projects
+            To My Projects
           </ButtonScroll>
         </ParallaxLayer>
       </Parallax>

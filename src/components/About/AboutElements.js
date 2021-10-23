@@ -19,15 +19,13 @@ export const PostContainer = styled.section`
 
 export const PostsCard = styled.div`
   background: ${palette.LIGHT};
-
   font-weight: bolder;
   border-radius: 10px;
   backdrop-filter: blur(2rem);
   width: max-content;
   height: auto;
   padding: 10px;
-  margin: 20px;
-  margin-left: 100px;
+  margin: ${({ marginTop }) => marginTop} 20px 20px 100px;
 `;
 
 export const PostsIcon = styled(GatsbyImage)`
@@ -39,6 +37,7 @@ export const PostsIcon = styled(GatsbyImage)`
   }
   border-radius: 10px;
   backdrop-filter: blur(2rem);
+  margin-top: ${({ marginTop }) => marginTop};
 `;
 export const TitleWrapper = styled.div`
   height: fit-content;
