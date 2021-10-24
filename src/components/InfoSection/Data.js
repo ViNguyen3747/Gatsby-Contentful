@@ -2,7 +2,6 @@ import * as palette from "../../styles/Variables";
 export const AboutSection = {
   id: "about",
   bg: palette.DARK,
-  lightText: true,
   topLine: "About Me",
   buttonScroll: "Learn More",
   buttonLink: "My Resume",
@@ -18,7 +17,6 @@ export const AboutSection = {
 export const ProjectSection = {
   id: "projects",
   bg: palette.DARK_GREEN,
-  lightText: true,
   topLine: "Self Projects",
   buttonRoute: "To My Self-Projects",
   buttonScroll: "Github Repos",
@@ -34,11 +32,10 @@ export const ProjectSection = {
 export const ContactSection = {
   id: "contact",
   bg: palette.LIGHT,
-  lightText: false,
   topLine: "Contact Me",
   imgStart: false,
   alt: "email",
   dark: false,
   primary: false,
-  textColor: palette.LIGHT,
+  textColor: palette.DARK,
 };

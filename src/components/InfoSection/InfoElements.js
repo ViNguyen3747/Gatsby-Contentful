@@ -71,8 +71,6 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? palette.LIGHT : palette.DARK)};
-
   @media screen and (max-width: ${palette.BP_SMALL}) {
     font-size: 32px;
   }
@@ -82,7 +80,6 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 20px;
   line-height: 35px;
-  color: ${({ darkText }) => (darkText ? palette.DARK : palette.LIGHT)};
 `;
 
 export const BtnWrap = styled.div`

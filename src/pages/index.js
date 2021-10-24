@@ -47,7 +47,7 @@ const IndexPage = () => {
   const contactInfo = infos[3].node;
   return (
     <>
-      <Seo title="Tina's Portfolio" />
+      <Seo title="Vi's Portfolio" />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection info={homeInfo} />

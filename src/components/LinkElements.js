@@ -37,7 +37,7 @@ const LinkStyle = ({ dark, primary }) => `
     }
 `;
 
-const ButtonStyle = ({ dark, primary, marginTop }) => `
+const ButtonStyle = ({ dark, primary, marginTop, inline }) => `
   cursor: pointer;
   text-decoration: none;
   display: block;
@@ -52,6 +52,7 @@ const ButtonStyle = ({ dark, primary, marginTop }) => `
   font-weight: bold;
   font-size: 20px;
   margin-top: ${marginTop};
+  transform: ${inline ? "scale(0.6)" : ""};
 
   &::after,
   &::before {

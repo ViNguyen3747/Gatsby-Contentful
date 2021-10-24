@@ -10,7 +10,6 @@ import {
   Column2,
   Img,
   ImgWrap,
-  TopLine,
 } from "../InfoSection/InfoElements";
 import {
   ContactContainer,
@@ -54,7 +53,7 @@ export const ContactUs = ({
 
   return (
     <>
-      <InfoContainer bg={bg} id={id}>
+      <InfoContainer bg={bg} id={id} textColor={textColor}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
@@ -85,7 +84,7 @@ export const ContactUs = ({
                   </InputWrapper>
                   <InputWrapper>
                     <ButtonStandard
-                      style={{ transform: "scale(0.6)" }}
+                      inline="true"
                       primary="true"
                       dark="true"
                       type="submit"

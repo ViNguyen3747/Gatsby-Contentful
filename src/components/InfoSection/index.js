@@ -19,8 +19,6 @@ const index = ({
   id,
   imgStart,
   topLine,
-  lightText,
-  darkText,
   buttonRoute,
   buttonScroll,
   buttonLink,
@@ -41,8 +39,8 @@ const index = ({
             <Column1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{info.headline}</Heading>
-                <Subtitle darkText={darkText}>{info.description}</Subtitle>
+                <Heading>{info.headline}</Heading>
+                <Subtitle>{info.description}</Subtitle>
                 {link ? (
                   <BtnWrap>
                     <LinkStandard

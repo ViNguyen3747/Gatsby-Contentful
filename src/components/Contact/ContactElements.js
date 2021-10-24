@@ -13,7 +13,6 @@ export const ContactContainer = styled.form`
 
 export const InputWrapper = styled.div`
   padding-bottom: 20px;
-  color: ${palette.DARK};
   font-weight: bold;
 `;
 

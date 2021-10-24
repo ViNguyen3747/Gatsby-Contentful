@@ -68,7 +68,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
-                to="github"
+                to="repo"
                 smooth={true}
                 duration={500}
                 spy={true}

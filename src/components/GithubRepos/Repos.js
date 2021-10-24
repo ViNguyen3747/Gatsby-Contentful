@@ -1,13 +1,14 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { GithubContainer, GithubWrapper } from "./ReposElement";
 import {
   Circle,
   GithubName,
   RepoCard,
   LanguageWrapper,
-} from "../GithubReposElements";
-import Header from "../../Header";
+  GithubContainer,
+  GithubWrapper,
+} from "./GithubReposElements";
+import Header from "../Header";
 
 const Repos = () => {
   const data = useStaticQuery(graphql`

@@ -1,5 +1,5 @@
 import React from "react";
-import Repos from "../components/GithubRepos/AllGithubRepos/Repos";
+import Repos from "../components/GithubRepos/Repos";
 import Seo from "../components/seo";
 const github = () => {
   return (

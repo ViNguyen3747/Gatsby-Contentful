@@ -21,7 +21,7 @@ const index = ({ isOpen, toggle }) => {
           <SidebarLink to="projects" onClick={toggle}>
             Projects
           </SidebarLink>
-          <SidebarLink to="github" onClick={toggle}>
+          <SidebarLink to="repo" onClick={toggle}>
             Github Repos
           </SidebarLink>
           <SidebarLink to="contact" onClick={toggle}>

@@ -4,7 +4,7 @@ import * as palette from "../../styles/Variables";
 import BackgroundImg from "../../images/leaf.webp";
 export const PostContainer = styled.section`
   position: relative;
-  height: 90vh;
+  height: 90.5vh;
   background-color: ${palette.LIGHT};
   display: flex;
   flex-flow: row nowrap;

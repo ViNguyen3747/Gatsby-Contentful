@@ -51,7 +51,7 @@ const GithubRepos = () => {
   const repos = data.allGithubData.edges[0].node.data.viewer.repositories.edges;
   const reposSample = repos.slice(0, 4);
   return (
-    <ReposContainer id="github">
+    <ReposContainer id="repo">
       <ReposWrapper>
         <ReposRow>
           <Column1>
