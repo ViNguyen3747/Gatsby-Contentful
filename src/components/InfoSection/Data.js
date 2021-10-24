@@ -26,7 +26,7 @@ export const ProjectSection = {
   primary: false,
   textColor: palette.LIGHT,
   route: "projects",
-  to: "github",
+  to: "repo",
 };
 
 export const ContactSection = {
