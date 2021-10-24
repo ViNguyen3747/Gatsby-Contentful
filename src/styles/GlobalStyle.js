@@ -10,16 +10,19 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "Encode Sans Expanded", sans-serif;
         }
     body {
+        overflow: overlay;
         overflow-x: hidden;
     }
 
     ::-webkit-scrollbar {
-        background: #010606;
-        width: 10px;
-        height: 12px;
+        background: transparent;
+        width: 12px;
+        height: 13px;
     }
 
     ::-webkit-scrollbar-thumb {
-        background: #177629;
+        background: #177629;        
+        border-radius: 5px;
+        border: 3px solid white;
     }
 `;

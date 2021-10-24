@@ -156,5 +156,5 @@ export const GithubWrapper = styled.div`
   grid-template-columns: repeat(${(props) => props.columns}, 500px);
   grid-auto-rows: 100px;
   grid-gap: 5vh;
-  padding-left: 15vh;
+  padding-left: 10px;
 `;
