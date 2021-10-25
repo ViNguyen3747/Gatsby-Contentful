@@ -18,20 +18,26 @@ export const InputWrapper = styled.div`
 
 export const Label = styled.label`
   display: block;
-  width: 100px;
+  width: 10vw;
   padding-bottom: 10px;
 `;
 
 export const TextInput = styled.input`
-  width: 400px;
+  width: 30vw;
   height: 40px;
   padding: 10px;
   ${BoxStyle};
+  @media screen and (max-width: ${palette.BP_MEDIUM}) {
+    width: 70vw;
+  }
 `;
 
 export const TextArea = styled.textarea`
-  width: 400px;
+  width: 30vw;
   height: 250px;
   padding: 10px;
   ${BoxStyle};
+  @media screen and (max-width: ${palette.BP_MEDIUM}) {
+    width: 70vw;
+  }
 `;

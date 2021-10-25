@@ -5,6 +5,7 @@ import BackgroundImg from "../../images/leaf.webp";
 export const PostContainer = styled.section`
   position: relative;
   height: 90.5vh;
+  min-width: 100vw;
   background-color: ${palette.LIGHT};
   display: flex;
   flex-flow: row nowrap;
@@ -26,14 +27,19 @@ export const PostsCard = styled.div`
   height: auto;
   padding: 10px;
   margin: ${({ marginTop }) => marginTop} 20px 20px 100px;
+  @media screen and (max-width: ${palette.BP_SMALL}) {
+    transform: scale(0.7);
+  }
 `;
 
 export const PostsIcon = styled(GatsbyImage)`
   height: auto;
   width: 250px;
-
+  @media screen and (max-width: ${palette.BP_SMALL}) {
+    transform: scale(0.7);
+  }
   @media screen and (min-width: ${palette.BP_XXLARGE}) {
-    width: 350px;
+    transform: scale(1.4);
   }
   border-radius: 10px;
   backdrop-filter: blur(2rem);

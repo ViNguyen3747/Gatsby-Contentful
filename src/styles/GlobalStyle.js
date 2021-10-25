@@ -8,9 +8,9 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         font-family: "Encode Sans Expanded", sans-serif;
-        }
+    }
     body {
-        overflow: overlay;
+        overflow: overlay;        
         overflow-x: hidden;
     }
 

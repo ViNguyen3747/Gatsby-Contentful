@@ -42,17 +42,15 @@ export const PostsCard = styled(Link)`
   padding: 20px;
   width: 400px;
   height: 550px;
-  transition: all 0.2s ease-in-out;
 
   &:hover {
-    transform: scale(1.02);
-    transition: all 0.2 ease-in-out;
     cursor: pointer;
   }
-
+  @media screen and (max-width: ${palette.BP_SMALL}) {
+    transform: scale(0.9);
+  }
   @media screen and (min-width: ${palette.BP_XXLARGE}) {
-    width: 500px;
-    height: 720px;
+    transform: scale(1.25);
   }
 `;
 

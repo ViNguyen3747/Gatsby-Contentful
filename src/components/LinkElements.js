@@ -83,6 +83,9 @@ const ButtonStyle = ({ dark, primary, marginTop, inline }) => `
     width: calc(100% + 8px);
     height: 20px;
   }
+  @media screen and (max-width: ${palette.BP_MEDIUM}) {
+    transform: scale(0.7);
+  }
 `;
 export const LinkScroll = styled(LinkS)`
   ${LinkStyle};

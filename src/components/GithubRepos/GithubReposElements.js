@@ -4,7 +4,9 @@ import BackgroundImg from "../../images/leaf.webp";
 export const ReposContainer = styled.div`
   color: ${palette.LIGHT};
   background: ${palette.DARK};
-
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
   @media screen and (max-width: ${palette.BP_MEDIUM}) {
     padding: 100px 0;
   }
@@ -16,7 +18,6 @@ export const ReposContainer = styled.div`
 export const ReposWrapper = styled.div`
   display: grid;
   width: 100%;
-  min-height: 100vh;
   max-width: 80vw;
   margin-right: auto;
   margin-left: auto;

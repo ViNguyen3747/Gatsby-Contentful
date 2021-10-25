@@ -3,6 +3,7 @@ import * as palette from "../../styles/Variables";
 
 export const FooterContainer = styled.footer`
   background-color: ${palette.DARK};
+  width: 100vw;
 `;
 
 export const FooterWrap = styled.div`
