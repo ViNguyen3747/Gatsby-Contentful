@@ -15,7 +15,7 @@ const trackingInExpand = keyframes`
 export const HeroContainer = styled.div`
   background: ${palette.DARK};
   display: flex;
-  width: 100vw;
+  max-width: 100vw;
   justify-content: center;
   align-items: center;
   padding: 0 30px;
