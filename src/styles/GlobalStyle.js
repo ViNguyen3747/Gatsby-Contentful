@@ -13,6 +13,11 @@ export const GlobalStyle = createGlobalStyle`
         overflow: overlay;        
         overflow-x: hidden;
     }
+    html {
+        @media screen and (max-width: 770px) {
+            overflow-x: hidden;
+        }
+    }
 
     ::-webkit-scrollbar {
         background: transparent;
