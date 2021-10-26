@@ -6,7 +6,6 @@ export const ReposContainer = styled.div`
   background: ${palette.DARK};
   position: relative;
   width: 100vw;
-  min-height: 100vh;
   @media screen and (max-width: ${palette.BP_MEDIUM}) {
     padding: 100px 0;
   }
@@ -19,6 +18,7 @@ export const ReposWrapper = styled.div`
   display: grid;
   width: 100%;
   max-width: 80vw;
+  min-height: 100vh;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;

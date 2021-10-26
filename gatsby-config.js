@@ -71,7 +71,7 @@ module.exports = {
         background_color: `#212121`,
         theme_color: `#177629`,
         display: `standalone`,
-        icon: `src/images/avatar.png`,
+        icon: `src/images/avatar.webp`,
         icon_options: {
           purpose: `any maskable`,
         },

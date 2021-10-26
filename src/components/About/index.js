@@ -55,9 +55,9 @@ const About = () => {
   `);
   const infos = data.allContentfulFact.edges;
   const first = infos[0].node;
-  const second = infos.slice(1, 8);
-  const third = infos[8].node;
-  const fourth = infos.slice(9, infos.length);
+  const second = infos.slice(1, 9);
+  const third = infos[9].node;
+  const fourth = infos.slice(10, infos.length);
   return (
     <PostContainer id="aboutInfo">
       <Parallax pages={6} horizontal>

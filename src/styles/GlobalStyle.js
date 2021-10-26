@@ -9,8 +9,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-family: "Encode Sans Expanded", sans-serif;
     }
-    body {
-        overflow: overlay;        
+    body {      
         overflow-x: hidden;
     }
     html {
@@ -20,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     ::-webkit-scrollbar {
-        background: transparent;
+        background: #010606;
         width: 12px;
         height: 13px;
     }
