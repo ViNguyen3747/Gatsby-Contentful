@@ -35,6 +35,9 @@ export const ReposRow = styled.div`
   @media screen and (max-width: ${palette.BP_XLARGE}) {
     grid-template-areas: "col1 col1" "col2 col2";
   }
+  @media screen and (min-width: ${palette.BP_XXLARGE}) {
+    grid-auto-columns: minmax(auto, 0.5fr);
+  }
 `;
 
 export const Column1 = styled.div`
