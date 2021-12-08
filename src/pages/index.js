@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useStaticQuery, graphql } from "gatsby";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
@@ -15,6 +17,10 @@ import Seo from "../components/seo";
 import { ContactUs } from "../components/Contact";
 const IndexPage = () => {
   const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
   const data = useStaticQuery(graphql`
     {
       allContentfulInfoSection(sort: { fields: infoID, order: ASC }) {

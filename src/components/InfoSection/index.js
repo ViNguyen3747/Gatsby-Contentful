@@ -14,7 +14,7 @@ import {
   ImgWrap,
 } from "./InfoElements";
 import { LinkScroll, LinkRouter, LinkStandard } from "../LinkElements";
-const index = ({
+const Info = ({
   bg,
   id,
   imgStart,
@@ -83,7 +83,11 @@ const index = ({
               </TextWrapper>
             </Column1>
             <Column2>
-              <ImgWrap>
+              <ImgWrap
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-anchor-placement="center-bottom"
+              >
                 <Img image={info.img.gatsbyImageData} alt={alt} />
               </ImgWrap>
             </Column2>
@@ -94,4 +98,4 @@ const index = ({
   );
 };
 
-export default index;
+export default Info;

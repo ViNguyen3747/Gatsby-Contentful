@@ -96,7 +96,11 @@ export const ContactUs = ({
               </TextWrapper>
             </Column1>
             <Column2>
-              <ImgWrap>
+              <ImgWrap
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-anchor-placement="center-bottom"
+              >
                 <Img image={info.img.gatsbyImageData} alt={alt} />
               </ImgWrap>
             </Column2>
