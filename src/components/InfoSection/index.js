@@ -66,6 +66,7 @@ const Info = ({
                 ) : null}
                 {to ? (
                   <BtnWrap>
+                    <br />
                     <LinkScroll
                       to={to}
                       smooth={true}

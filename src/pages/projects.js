@@ -45,7 +45,7 @@ const Posts = ({ data }) => {
 
 export const query = graphql`
   {
-    allContentfulGithubRepo {
+    allContentfulGithubRepo(sort: { fields: projectID, order: DESC }) {
       edges {
         node {
           id

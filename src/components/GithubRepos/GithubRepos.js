@@ -61,9 +61,11 @@ const GithubRepos = () => {
                 This is where you can find all of my coding projects
               </Heading>
               <BtnWrap>
+                <br />
                 <LinkRouter to="/github">To Github Repos</LinkRouter>
               </BtnWrap>
               <BtnWrap>
+                <br />
                 <LinkScroll
                   to="contact"
                   smooth={true}
