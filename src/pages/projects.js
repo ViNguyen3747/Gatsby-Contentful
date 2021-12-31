@@ -17,7 +17,7 @@ const Posts = ({ data }) => {
     <>
       <Seo
         title="Vi's Projects list"
-        description="All self-projects built with ReactJS, GatsbyJS, Angular"
+        description="All self-projects in web development"
       />
       <Header link="/" title="Back" />
       <PostContainer id="posts">
