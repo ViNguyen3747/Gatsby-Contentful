@@ -45,14 +45,14 @@ const Posts = ({ data }) => {
 
 export const query = graphql`
   {
-    allContentfulGithubRepo(sort: { fields: projectID, order: DESC }) {
+    allContentfulGithubRepo(sort: { fields: projectId, order: DESC }) {
       edges {
         node {
           id
           slug
           title
           tags
-          projectID
+          projectId
           thumbnail {
             gatsbyImageData(placeholder: DOMINANT_COLOR, formats: WEBP)
           }
