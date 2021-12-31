@@ -52,6 +52,7 @@ export const query = graphql`
           slug
           title
           tags
+          projectID
           thumbnail {
             gatsbyImageData(placeholder: DOMINANT_COLOR, formats: WEBP)
           }
