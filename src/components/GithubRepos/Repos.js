@@ -46,7 +46,7 @@ const Repos = () => {
       <Header link="/" title="Back" />
 
       <GithubContainer id="github">
-        <GithubWrapper columns={Math.ceil(repos.length / 4)}>
+        <GithubWrapper>
           {repos.map((repo, index) => (
             <RepoCard
               key={index}

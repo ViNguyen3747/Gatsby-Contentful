@@ -6,7 +6,8 @@ export const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
         margin: 0;
-        padding: 0;
+        padding: 0;        
+        letter-spacing: 1px;
         font-family: "Encode Sans Expanded", sans-serif;
     }
     body {      
@@ -27,6 +28,6 @@ export const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar-thumb {
         background: #177629;        
         border-radius: 5px;
-        border: 3px solid white;
+        border: 3px solid #010606;
     }
 `;

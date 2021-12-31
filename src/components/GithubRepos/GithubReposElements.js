@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import * as palette from "../../styles/Variables";
-import BackgroundImg from "../../images/leaf.webp";
 export const ReposContainer = styled.div`
   color: ${palette.LIGHT};
   background: ${palette.DARK};
@@ -19,15 +18,13 @@ export const ReposWrapper = styled.div`
   width: 100%;
   max-width: 80vw;
   min-height: 100vh;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 24px;
+  margin 0 auto;
   justify-content: center;
 `;
 
 export const ReposRow = styled.div`
   display: grid;
-  grid-auto-columns: minmax(auto, 1fr);
+  grid-auto-columns: minmax(auto, 1.5fr);
   align-items: center;
   grid-template-areas: "col2 col1";
 
@@ -42,25 +39,17 @@ export const ReposRow = styled.div`
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
-  padding-top: 50px;
+  padding: 50px 0 0 20px;
   grid-area: col1;
-  @media screen and (min-width: ${palette.BP_XLARGE}) {
-    transform: rotateY(-30deg);
-    padding-top: 0;
-  }
 `;
 
 export const Column2 = styled.div`
-  padding: 0 15px;
   grid-area: col2;
   display: grid;
-  grid-template-rows: repeat(4, 100px);
-  grid-gap: 20px;
-  width: 90%;
+  width: 100%;
   padding-bottom: 50px;
-  @media screen and (min-width: ${palette.BP_XLARGE}) {
-    transform: rotateY(30deg);
-    padding-bottom: 0px;
+  @media screen and (max-width: ${palette.BP_SMALL}) {
+    margin-left: -35px;
   }
 `;
 
@@ -83,7 +72,7 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
-  line-height: 1.1;
+  line-height: 3.5rem;
   font-weight: 600;
   color: ${palette.LIGHT};
 
@@ -93,19 +82,29 @@ export const Heading = styled.h1`
 `;
 
 export const RepoCard = styled.a`
-  background-color: ${palette.YELLOW_GREEN};
+  background: ${palette.DARK_GREEN1};
+  position: relative;
   color: ${palette.LIGHT};
+  width: 40vw;
+  min-width: 320px;
+  max-width: 550px;
+  align-items: left;
+  min-height: 100px;
+  margin: 20px auto;
   display: box;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
   font-weight: bold;
   line-height: 25px;
-  transition: all 0.5s ease-out;
-  will-change: transform;
+  border: 1px solid ${palette.LIGHT_OPACITY1};
   &:hover {
-    background-color: ${palette.LIGHT};
-    color: ${palette.DARK_GREEN};
+    cursor: pointer;
+    border: 1px solid ${palette.LIGHT};
+  }
+  @media screen and (max-width: ${palette.BP_SMALL}) {
+    margin: 20px 20px;
+    font-size: 0.7rem;
   }
 `;
 export const LanguageWrapper = styled.div`
@@ -127,13 +126,15 @@ export const Circle = styled.span`
   margin-top: 2px;
 `;
 export const GithubName = styled.div`
-  font-size: 17px;
-  text-transform: uppercase;
+  font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
   letter-spacing: 3px;
   margin: 10px;
+  @media screen and (max-width: ${palette.BP_SMALL}) {
+    font-size: 1rem;
+  }
 `;
 
 export const BtnWrap = styled.div`
@@ -141,24 +142,14 @@ export const BtnWrap = styled.div`
 `;
 
 export const GithubContainer = styled.section`
+  min-height: 100vh;
   position: relative;
-  height: 100vh;
-  overflow-x: scroll;
-  background-image: url(${BackgroundImg});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: ${palette.DARK_GREEN2};
 `;
 
 export const GithubWrapper = styled.div`
-  display: grid;
-  position: relative;
-  width: 100%;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  grid-template-columns: repeat(${(props) => props.columns}, 500px);
-  grid-auto-rows: 100px;
-  grid-gap: 5vh;
-  padding-left: 10px;
+  display: flex;
+  padding-top: 15vh;
+  flex-flow: row wrap;
+  align-items: center;
 `;

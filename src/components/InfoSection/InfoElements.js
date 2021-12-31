@@ -69,7 +69,7 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
-  line-height: 1.1;
+  line-height: 3.5rem;
   font-weight: 600;
   @media screen and (max-width: ${palette.BP_SMALL}) {
     font-size: 32px;

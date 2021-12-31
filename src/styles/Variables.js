@@ -5,6 +5,7 @@ export const YELLOW_GREEN = "#6a994e";
 export const LIGHT = "#c9d4c6";
 export const DARK = "#010606";
 export const LIGHT_OPACITY = "#f3ffd6b4";
+export const LIGHT_OPACITY1 = "#9db36c";
 export const DARK_GREEN1 = "#162018";
 export const DARK_GREEN2 = "#131d15";
 export const BP_SMALL = "400px";

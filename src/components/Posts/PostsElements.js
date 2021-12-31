@@ -21,7 +21,6 @@ export const PostsCard = styled(Link)`
   color: ${palette.LIGHT};
   display: flex;
   flex-direction: column;
-  margin-right: 80px;
   flex-shrink: 0;
   align-items: left;
   border-radius: 10px;
@@ -48,10 +47,10 @@ export const PostsH1 = styled.h1`
   font-size: 1.7rem;
   line-height: 2.4rem;
   font-weight: 800;
-  padding: 20px 0px 10px 20px;
+  padding: 0px 5px 10px 20px;
   letter-spacing: 3px;
   @media screen and (max-width: ${palette.BP_SMALL}) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   @media screen and (min-width: ${palette.BP_XXLARGE}) {
     font-size: 3rem;
@@ -65,12 +64,15 @@ export const PostsP = styled.div`
 
 export const Tag = styled.span`
   letter-spacing: 3px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
   border-radius: 5px;
-  padding: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
   font-weight: 700;
   display: inline-block;
   @media screen and (min-width: ${palette.BP_XXLARGE}) {
     font-size: 1.5rem;
+    line-height: 1.7rem;
   }
 `;
