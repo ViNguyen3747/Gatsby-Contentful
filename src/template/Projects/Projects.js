@@ -30,10 +30,11 @@ const Projects = ({ data }) => {
               <Title> {title}</Title>
               <Wrapper>
                 {tags.map((tag, index) => (
-                  <Tag key={index}>{tag}</Tag>
+                  <Tag key={index}>#{tag}</Tag>
                 ))}
               </Wrapper>
               <Wrapper>
+                <br />
                 <LinkStandard
                   target="_blank"
                   rel="noopener noreferrer"
@@ -45,6 +46,7 @@ const Projects = ({ data }) => {
               </Wrapper>
               {websiteLink ? (
                 <Wrapper>
+                  <br />
                   <LinkStandard
                     target="_blank"
                     rel="noopener noreferrer"

@@ -4,14 +4,17 @@ import { Link as LinkS } from "react-scroll";
 import * as palette from "../styles/Variables";
 const LinkStyle = ({ dark, primary }) => `
     color: ${dark ? palette.DARK : palette.LIGHT};
-    font-size: 20px;
+    font-size: 1.4rem;
     margin-right: 10px;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     transition: all 0.4s ease-out;
     will-change: transform;
+    @media screen and (max-width: ${palette.BP_SMALL}) {
+    font-size: 1rem;
+  }
     &:after {
         content: "";
         display: block;

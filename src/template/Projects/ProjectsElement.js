@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
 import * as palette from "../../styles/Variables";
-import BackgroundImg from "../../images/leaf.webp";
 const layout = ({ num }) => `
   column-count: ${num};
   -moz-column-count: ${num};
@@ -13,17 +12,12 @@ const layout = ({ num }) => `
 
 export const ProjectContainer = styled.div`
   position: relative;
-  background-image: url(${BackgroundImg});
-  background-position: 0% 20%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   min-height: 100vh;
   padding: 100px 10vw 0 10vw;
   align-items: center;
   justify-content: center;
   display: flex;
-  background-color: ${palette.DARK_GREEN};
+  background-color: ${palette.LIGHT};
 `;
 
 export const ProjectWrapper = styled.div`
@@ -69,11 +63,12 @@ export const Title = styled.h1`
   margin: 50px 0 24px 0;
   font-size: 2.2rem;
   line-height: 1.1;
+  letter-spacing: 1px;
   font-weight: 600;
   color: ${palette.DARK_GREEN};
 
   @media screen and (max-width: ${palette.BP_SMALL}) {
-    font-size: 32px;
+    font-size: 1.8rem;
   }
 `;
 
@@ -86,24 +81,17 @@ export const MediaImg = styled(GatsbyImage)`
 
 export const Wrapper = styled.div`
   width: 100%;
-  &:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    margin: 10px 0 20px 0;
-    background-color: ${palette.LIGHT};
-  }
 `;
 export const Tag = styled.span`
-  background: ${palette.LIGHT};
-  color: ${palette.DARK_GREEN};
-  text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 0.8rem;
-  border-radius: 5px;
+  font-size: 1.2rem;
   padding: 10px;
-  margin: 0 20px 20px 0;
-  font-weight: bolder;
+  margin: 0 10px 10px 0;
+  font-weight: 800;
   display: inline-block;
+  @media screen and (max-width: ${palette.BP_SMALL}) {
+    font-size: 0.7rem;
+    margin: 0 5px 5px 0;
+    padding: 5px;
+  }
 `;

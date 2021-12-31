@@ -24,16 +24,17 @@ const Posts = ({ data }) => {
         <PostsWrapper>
           {repos.map(({ node: repo }) => (
             <PostsCard key={repo.id} to={`/projects/${repo.slug}`}>
-              <PostsH1>{repo.title}</PostsH1>
-              <PostsP>
-                {repo.tags.map((tag, index) => (
-                  <Tag key={index}>{tag}</Tag>
-                ))}
-              </PostsP>
               <PostsIcon
                 image={repo.thumbnail.gatsbyImageData}
                 alt={repo.title}
               />
+              <br />
+              <PostsH1>{repo.title}</PostsH1>
+              <PostsP>
+                {repo.tags.map((tag, index) => (
+                  <Tag key={index}>#{tag}</Tag>
+                ))}
+              </PostsP>
             </PostsCard>
           ))}
         </PostsWrapper>

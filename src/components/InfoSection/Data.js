@@ -31,7 +31,7 @@ export const ProjectSection = {
 
 export const ContactSection = {
   id: "contact",
-  bg: palette.LIGHT,
+  bg: palette.LIGHT_OPACITY,
   topLine: "Contact Me",
   imgStart: false,
   alt: "email",
