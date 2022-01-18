@@ -49,7 +49,7 @@ const GithubRepos = () => {
     }
   `);
   const repos = data.allGithubData.edges[0].node.data.viewer.repositories.edges;
-  const reposSample = repos.slice(0, 4);
+  const reposSample = repos.slice(2, 6);
   return (
     <ReposContainer id="repo">
       <ReposWrapper>
