@@ -40,7 +40,7 @@ const Info = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading>{info.headline}</Heading>
-                <Subtitle>{info.description}</Subtitle>
+                <Subtitle>{info.description.description}</Subtitle>
                 {link ? (
                   <BtnWrap>
                     <LinkStandard

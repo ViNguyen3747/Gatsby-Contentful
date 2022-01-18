@@ -26,7 +26,9 @@ const IndexPage = () => {
       allContentfulInfoSection(sort: { fields: infoID, order: ASC }) {
         edges {
           node {
-            description
+            description {
+              description
+            }
             headline
             img {
               gatsbyImageData(placeholder: DOMINANT_COLOR, formats: WEBP)
