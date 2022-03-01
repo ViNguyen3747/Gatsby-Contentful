@@ -7,7 +7,7 @@ module.exports = {
     url: "https://viportfolio.gatsbyjs.io/",
     title: "Contentful with Gatsby",
     author: "@ThiKieuViNguye1",
-    image: "/avatar.webp",
+    image: "/avatar.jpg",
     description: "Building portfolio powered by Contentful and GatsbyJs",
     keywords:
       "portfolio, GatsbyJS, Contentful, Styled Component, Responsive Design",
@@ -71,7 +71,7 @@ module.exports = {
         background_color: `#212121`,
         theme_color: `#177629`,
         display: `standalone`,
-        icon: `src/images/avatar.webp`,
+        icon: `src/images/avatar.jpg`,
         icon_options: {
           purpose: `any maskable`,
         },
