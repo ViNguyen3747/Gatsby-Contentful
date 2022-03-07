@@ -18,7 +18,10 @@ export const GlobalStyle = createGlobalStyle`
             overflow-x: hidden;
         }
     }
-
+    ::selection {
+        background: #6a994e;
+        color: white;
+    }
     ::-webkit-scrollbar {
         background: #010606;
         width: 12px;
